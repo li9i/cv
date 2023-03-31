@@ -1,0 +1,258 @@
+\documentclass[a4paper,10pt,twoside]{article}
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Mapping=tex-text]{GFS Didot} % Main document font
+\setmainfont{Latin Modern Roman} % Main document font
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment:
+\addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\setlength{\textheight}{710pt}
+\pagestyle{fancy}
+\fancyhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LO,RE]{Curriculum Vitae - Alexandros Filotheou}
+
+\begin{document}
+
+%\pagestyle{plain} % Removes page numbering
+\pagenumbering{gobble}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Dipl.-Ing (EE) Alexandros Filotheou, M.Sc.}\bigskip\par}
+
+\section{Personal Details}
+
+\begin{tabular}{rp{10cm}}
+Place and Date of Birth 	& Thessaloniki, Greece | $8$ Nov $1987$ \\
+Address            			  & Plagiari, $57500$, PO Box $530$, Thessaloniki, Greece \\
+%Address            			  & Kungshamra $71$, $17070$, Stockholm, Sweden \\
+%Phone						& $(+30)$ $693-8787677$ | $(+30)$ $23920-25138$ \\
+Phone						          & (+30) 693 87 87 677 \\
+e-mail                    & \href{mailto:alexandros.filotheou@gmail.com}{alexandros.filotheou@gmail.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rp{11cm}}
+$09.2015 - 06.2017$ & \textbf{Master of Science} \\
+             & KTH Royal Institute of Technology, Stockholm, Sweden\\
+             & Programme title: \textit{Systems, Control and Robotics} \\
+             & \\
+             & \begin{small}\textbf{Degree Project:} ``Robust Decentralized Control of Cooperative Multi-robot Systems:
+               An inter-constraint Receding Horizon approach"\end{small} \\
+             & \begin{small}Supervisor: Prof. Dimos Dimarogonas, Department of Automatic Control, School of Electrical Engineering,
+               KTH Royal Institute of Technology\end{small} \\
+&\\
+$09.2005 - 07.2013$ & \textbf{Diploma in Electrical and Computer Engineering} \\
+                    & Aristotle University of Thessaloniki, Thessaloniki, Greece \\
+                    & GPA: $7.94 / 10.0$ \\
+                    & Class rank: $23 / 280$ $-$ $92^{nd}$ percentile \\
+                    &\\
+                    & \begin{small}\textbf{Diploma Thesis}: ``Multi-label classification using Learning Classifier Systems" \end{small}\\
+                    & \begin{small}Supervisor: Prof. Pericles Mitkas, Dept. of Electronics and Computer Engineering, School of
+                    Electrical and Computer Engineering, Aristotle University of Thessaloniki \end{small}\\
+                    & \begin{small}Grade: $10.0 / 10.0$ \end{small}\\
+&\\
+%$09.1999 - 06.2005$ & \textbf{Secondary education diploma} \\
+                    %& Anatolia High School, Thessaloniki \\
+                    %& GPA: $19.0 / 20.0$ \\
+                    %&\\
+
+%------------------------------------------------
+
+\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+
+\begin{tabular}{rp{11cm}}
+$09.2016 - 11.2016$ & \textbf{Teaching Assistant} for course DD2380 $-$ Artificial Intelligence, KTH Royal Institute of Technology, Stockholm, Sweden\\
+&\\
+%------------------------------------------------
+
+$10.2011 - 03.2012$ & \textbf{Database Designer, Egnatia Motorway S.A., Thessaloniki, Greece} \\
+& \small{Design and implementation of a unified database, suitable for the needs of the
+Instrumental Landslide and Geotechnical Issues
+monitoring system, in the context of the European Research Program IRIS.
+}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+$03.2011 - 05.2011$ & \textbf{Application Developer, Internship at Egnatia Motorway S.A., Thessaloniki, Greece}\\
+& \small{Design, development and technical and user documentation of a system for data
+recovery and report-issuing from the company's bridge register using
+customizable criteria. The application was developed using ORACLE developer tools.
+}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+$07.2008 - 06.2009$ & \textbf{Technical Support Assistant at the Hellenic Telecommunications
+Organisation (OTE S.A.) Thessaloniki, Greece}\\
+& \small{Technical support and service of customers regarding Internet connectivity and configuration
+issues.}\\
+&\\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTARY WORK
+%----------------------------------------------------------------------------------------
+
+\section{Voluntary Work}
+
+
+\begin{tabular}{rp{11cm}}
+$10.2013 -07.2014$ & \textbf{Computer Vision Engineer at PANDORA Robotics Team, Robotics Lab,
+School of Electrical and Computer Engineering, Aristotle University of Thessaloniki} \\
+& \small{Design of the architecture, implementation and thorough documentation of
+the Hole Detection system of the PANDORA robot under ROS, using RGB+Depth sensors
+(Microsoft Kinect and ASUS Xtion) in the context of the conditions of the international
+RoboCup Rescue competition.}\\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+\section{Publications}
+
+A. Filotheou, A. Nikou, and D. V. Dimarogonas. Robust Decentralized Navigation
+of Multi-Agent Systems with Collision Avoidance and Connectivity Maintenance
+Using Model Predictive Controllers. \textit{International Journal of Control, 2018}\\
+
+A. Filotheou, A. Nikou, and D. V. Dimarogonas. Decentralized Control of Uncertain
+Multi-Agent Systems with Connectivity Maintenance and Collision Avoidance.
+\textit{IEEE European Control Conference (ECC), 2018.}\\
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Distinctions
+%----------------------------------------------------------------------------------------
+
+\section{Distictions}
+\begin{tabular}{rl}
+
+  $2016$ & Teaching Assistant, DD2380 - Artificial Intelligence, \\ & under the
+supervision of Professor Patric Jensfelt, KTH Royal Institute of Technology, Sweden \\
+
+%------------------------------------------------
+
+$2013$ & Ranked $23^{rd}$ in graduating class among $280$ students who enrolled in $2005$,
+AUTH, Greece \\
+
+%------------------------------------------------
+
+$2011$ & Top of my class in the course of Database Systems, winter semester $2010 - 2011$,
+AUTH, Greece \\
+
+%------------------------------------------------
+
+$2005$ & Ranked $21^{st}$ in entering class among $280$ students who enrolled in $2005$\\
+&\\
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Seminars
+%----------------------------------------------------------------------------------------
+
+%\section{Seminars \& Conferences Attendance}
+
+%\begin{tabular}{rp{12cm}}
+%$06.2012$ & Seminar in Bioinformatics -
+%Dept. of Electrical and Computer Engineering, Aristotle University of Thessaloniki, Thessaloniki, Greece \\
+
+%$10.2011 - 01.2012$ & Seminars for developing web and mobile applications,
+%Independent student initiative at the School of Electrical \& Computer Engineering, Aristotle
+%University of Thessaloniki, Thessaloniki, Greece \\
+
+%$04.2009$ & $3^{rd}$ Panhellenic Electrical \& Computer Engineering Students Conference,
+%Aristotle University of Thessaloniki, Thessalonki, Greece \\
+
+%$04.2008$ & $2^{nd}$ Panhellenic Electrical \& Computer Engineering Students Conference,
+%National Technical University of Athens (NTUA), Athens, Greece \\
+
+%&\\
+%\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+\section{Computer Skills}
+
+\begin{tabular}{rp{12cm}}
+Languages & C/C++, Python, MATLAB, $\{$PL/$\}$SQL, Java, Shell Scripting, Assembly \\
+&\\
+$\{$Meta-$\}$Operating Systems & Linux, ROS \\
+&\\
+Graphics Applications & AutoCAD, Gimp\\
+&\\
+Tools & UML, Git, OpenCV, SCRUM, Oracle Forms / Reports, Apache HTTP Server,\\
+  &\LaTeX, AVR studio, OpenOffice, PSpice, Microsoft $\{$SQL Server, Visio, Project, Office$\}$\\
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rp{13cm}}
+English & Fluent - IELTS Score $8.5$ (2014)\\%, First Certificate in English, University of Cambridge (1999) \\
+French & Basic Knowledge - Delf A1, A2 (2001) \\
+Greek & Native
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	LINKS
+%----------------------------------------------------------------------------------------
+
+\section{Links}
+code: \url{https://github.com/li9i}
+
+demos: \url{https://www.youtube.com/user/canhartt/videos}
+
+\end{document}

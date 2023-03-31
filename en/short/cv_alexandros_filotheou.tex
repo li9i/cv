@@ -1,0 +1,147 @@
+\documentclass[a4paper,10pt,twoside]{article}
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Mapping=tex-text]{GFS Didot} % Main document font
+\setmainfont{Latin Modern Roman} % Main document font
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment:
+\addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\setlength{\textheight}{710pt}
+\pagestyle{fancy}
+\fancyhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+%\fancyfoot[LO,RE]{Curriculum Vitae - Alexandros Filotheou}
+
+\usepackage{tikz}
+
+\begin{document}
+
+%\pagestyle{plain} % Removes page numbering
+\pagenumbering{gobble}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Alexandros Filotheou}\bigskip\par}
+\vspace{1cm}
+
+\section{Personal Details}
+
+\begin{tabular}{rp{10cm}}
+Place and Date of Birth 	& Thessaloniki, Greece | $8$ Nov $1987$ \\
+Address            			  & Plagiari, $57500$, PO Box $530$, Thessaloniki, Greece \\
+%Address            			& Kungshamra $71$, $17070$, Stockholm, Sweden \\
+%Phone						        & $(+30)$ $693-8787677$ | $(+30)$ $23920-25138$ \\
+Phone						          & (+30) 693 87 87 677 \\
+e-mail                    & \href{mailto:alexandros.filotheou@gmail.com}{alexandros.filotheou@gmail.com}
+\end{tabular}\\
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rp{12cm}}
+$09.2018 -$ present & \textbf{PhD candidate} (ECE) $-$ Aristotle University of Thessaloniki \\
+                    & \textit{Scan--to--map-scan matching methods for pose estimation of LIDAR sensors} \\
+&\\
+$09.2015 - 06.2017$ & \textbf{Master of Science} (EE) $-$ \textit{Systems, Control, and Robotics}\\
+                    & KTH Royal Institute of Technology, Stockholm, Sweden\\
+&\\
+$09.2005 - 07.2013$ & \textbf{Diploma} (ECE) $-$ Aristotle University of Thessaloniki\\
+\end{tabular}\\
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{rp{12cm}}
+$09.2018 - 03.2023$ & \textbf{Research engineer} for NSRF projects, Aristotle University of Thessaloniki\\
+&\\
+$09.2016 - 11.2016$ & \textbf{Teaching Assistant} for course DD2380 $-$ Artificial Intelligence, KTH Royal Institute of Technology, Stockholm, Sweden\\
+&\\
+%------------------------------------------------
+$10.2011 - 03.2012$ & \textbf{Database Designer}, at Egnatia Motorway S.A., Thessaloniki, Greece \\
+&\\
+%------------------------------------------------
+$03.2011 - 05.2011$ & \textbf{Application Developer}, at Egnatia Motorway S.A., Internship, Thessaloniki, Greece\\
+&\\
+%------------------------------------------------
+$07.2008 - 06.2009$ & \textbf{ADSL Technical Support} at OTE S.A., Thessaloniki, Greece\\
+\end{tabular} \\
+
+
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTARY EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Voluntary Work}
+
+\begin{tabular}{rp{12cm}}
+%------------------------------------------------
+$10.2013 - 07.2014$ & \textbf{Computer Vision Engineer}, PANDORA Robotics Undergrad Team,
+Dept. of Electrical and Computer Engineering, Aristotle University of Thessaloniki \\
+\end{tabular} \\
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+\section{Computer Skills}
+
+\begin{tabular}{rp{12cm}}
+Languages & C/C++, Python, Shell, MATLAB, $\{$PL/$\}$SQL\\
+$\{$Meta-$\}$Operating Systems & Linux, ROS \\
+Tools & git, OpenCV, docker, Qt (cpp), Tkinter (py), Oracle Forms / Reports, \LaTeX\\
+\end{tabular}% \\
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rp{12cm}}
+\textbf{English} & Fluent - IELTS Score $8.5$ (2014) \ \ | \ \ \textbf{French} Basic Knowledge - Delf A2 (2001) \\
+\textbf{Greek} & Native \\
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	LINKS
+%----------------------------------------------------------------------------------------
+
+\section{Links}
+
+\noindent
+notable publications: \href{https://www.sciencedirect.com/science/article/abs/pii/S0921889021002323}{$[1]$}, \href{https://ieeexplore.ieee.org/abstract/document/9981228}{$[2]$} (\href{https://scholar.google.com/citations?view\_op=list\_works\&hl=en\&user=9\_hI4hMAAAAJ}{scholar} in general) \\
+notable packages: \href{https://github.com/li9i/fsm\_lidom\_ros}{\texttt{fsm\_lidom\_ros}}, \href{https://github.com/li9i/lama\_odom}{\texttt{lama\_odom}} (\href{https://github.com/li9i}{github} in general)\\
+demos: \href{https://www.youtube.com/user/canhartt/videos}{YouTube}
+
+\end{document}

@@ -1,0 +1,164 @@
+\documentclass[a4paper,10pt,twoside]{article}
+%\usepackage[top=1mm, bottom=1mm, inner=20mm, outer=20mm, footskip = 1mm]{geometry}
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Mapping=tex-text]{GFS Didot} % Main document font
+%\setmainfont{cmr12} % Main document font
+\setmainfont{GFSdidot} % Main document font
+
+\usepackage{wasysym}
+\usepackage{fontawesome}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment:
+\addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\setlength{\textheight}{710pt}
+\pagestyle{fancy}
+\fancyhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+%\fancyfoot[LO,RE]{Βιογραφικό Σημείωμα $-$ Αλέξανδρος Φιλοθέου}
+
+\usepackage{tikz}
+
+\begin{document}
+
+%\pagestyle{plain} % Removes page numbering
+\pagenumbering{gobble}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Αλέξανδρος Φιλοθέου}\bigskip\par}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Εκπαίδευση}
+
+\begin{tabular}{rp{11cm}}
+09.2018 $-$ παρόν \hspace{0.15cm}        & \textbf{Υποψήφιος Διδάκτωρ} \\
+                    & ΤΗΜΜΥ, Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης\\
+&\\
+09.2015 $-$ 06.2017 & \textbf{Μεταπτυχιακό Δίπλωμα Ειδίκευσης} $\cdot$ \textit{Systems, Control, and Robotics}\\
+                    & School of Electrical Engineering and Computer Science \\
+                    & KTH Royal Institute of Technology, Stockholm, Sweden\\
+&\\
+09.2005 $-$ 07.2013 & \textbf{Δίπλωμα Ηλεκτρολόγου Μηχανικού \& Μηχανικού Υπολογιστών} \\
+                    & THMMY, Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης \\
+                    %& Βαθμός: 7.94 / 10.0, Κατάταξη: 23 / 280
+\end{tabular}\\
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Εργασιακή Εμπειρία}
+
+\begin{tabular}{rp{12cm}}
+09.2018 $-$ 03.2023 & \textbf{Εργολήπτης Ερευνητικών Έργων Ρομποτικής} \\  & THMMY, Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης\\
+&\\
+09.2016 $-$ 11.2016 & \textbf{Βοηθός Διδασκαλίας} $\cdot$ \textit{DD2380 Artificial Intelligence} \\ & KTH Royal Institute of Technology, Stockholm, Sweden\\
+&\\
+%------------------------------------------------
+10.2011 $-$ 03.2012 & \textbf{Σχεδιαστής Βάσεων Δεδομένων} \\
+%------------------------------------------------
+03.2011 $-$ 05.2011 & \textbf{Προγραμματιστής Βάσεων Δεδομένων} $\cdot$ \textit{Πρακτική Άσκηση} \\ & Εγνατία Οδός Α.Ε., Θεσσαλονίκη \\
+&\\
+%------------------------------------------------
+07.2008 $-$ 06.2009 & \textbf{Τεχνικός Απομακρυσμένης Υποστήριξης} $\cdot$ Ο.Τ.Ε., Θεσσαλονίκη\\
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTARY EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Εθελοντική Εμπειρία}
+
+\begin{tabular}{rp{12cm}}
+10.2013 - 07.2014 & \textbf{Μηχανικός Υπολογιστικής Όρασης} $\cdot$ Ομάδα ρομποτικής PANDORA
+THMMY, Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης \\
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+\section{Γνώσεις Υπολογιστών}
+
+\begin{tabular}{rp{9cm}}
+Γλώσσες                             & \texttt{C/C++, Python, shell, MATLAB, LaTeX} \\
+$\{$Μετα-$\}$λειτουργικά Συστήματα  & \texttt{Linux, ROS} \\
+Εργαλεία / Βιβλιοθήκες              & \texttt{git, OpenCV, Docker, Qt/Tkinter}
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Γλώσσες}
+\begin{tabular}{rp{12cm}}
+Αγγλικά & C2 (IELTS Score 8.5, 2014) \\
+Ελληνικά & Μητρική
+\end{tabular} \\
+
+
+%----------------------------------------------------------------------------------------
+%	LINKS
+%----------------------------------------------------------------------------------------
+\section{Σύνδεσμοι}
+
+Επιλεγμένες δημοσιεύσεις (\href{https://scholar.google.com/citations?view\_op=list\_works\&hl=en\&user=9\_hI4hMAAAAJ}{Google Scholar}):
+\href{https://ieeexplore.ieee.org/abstract/document/9981228}{[1]}
+\href{https://www.sciencedirect.com/science/article/abs/pii/S0921889021002323}{[2]}
+\href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[3]}
+
+Επιλεγμένα πακέτα ROS (\href{https://github.com/li9i}{\texttt{github}}):
+\href{https://github.com/li9i/fsm\_lidom\_ros}{\texttt{fsm\_lidom\_ros}} $\cdot$
+\href{https://github.com/li9i/lama\_odom}{\texttt{lama\_odom}} $\cdot$
+\href{https://github.com/li9i/pandora\_vision\_2014/tree/hydro-devel/pandora\_vision\_hole\_detector}{\texttt{pvhd}}
+
+Demos / videos: \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{\texttt{cultureid}} $\cdot$ \href{https://www.youtube.com/watch?v=hB4qsHCEXGI}{\texttt{fsm}} $\cdot$ \href{https://relief.web.auth.gr/}{\texttt{relief}} $\cdot$ \href{https://www.youtube.com/watch?v=937OZez1iN8}{\texttt{mpc}}
+\\
+
+%----------------------------------------------------------------------------------------
+%	References
+%----------------------------------------------------------------------------------------
+\section{Συστάσεις}
+Δρ. Αντώνης Γ. Δημητρίου $\cdot$ Συντονιστής των έργων στα οποία εργάσθηκα στο Α.Π.Θ. \\
+\faPhone \ 6978896350 $\cdot$ \faEnvelopeO \ \href{mailto:antodimi@auth.gr}{antodimi@auth.gr} \\
+
+
+%----------------------------------------------------------------------------------------
+% Contact
+%----------------------------------------------------------------------------------------
+\section{Επικοινωνία}
+
+\begin{center}
+  \faPhone \ 693 87 87 677 \ $\cdot$ \ \faEnvelopeO \ \href{mailto:alexandros.filotheou@gmail.com}{alexandros.filotheou@gmail.com}
+\end{center}
+
+\end{document}
