@@ -574,6 +574,36 @@
       \verb https://ieeexplore.ieee.org/document/9617436/
       \endverb
     \endentry
+    \entry{Filotheou2022}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6318c21a509fd6bf32b6f0b5e88a8e16}{%
+           family={Filotheou},
+           family_i={F\bibinitperiod},
+           given={Alexandros},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6318c21a509fd6bf32b6f0b5e88a8e16}
+      \strng{fullhash}{6318c21a509fd6bf32b6f0b5e88a8e16}
+      \field{labelalpha}{Fil22}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09218890}
+      \field{journaltitle}{Robotics and Autonomous Systems}
+      \field{month}{03}
+      \field{title}{{Correspondenceless scan-to-map-scan matching of homoriented 2D scans for mobile robot localisation}}
+      \field{volume}{149}
+      \field{year}{2022}
+      \field{pages}{103957}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.robot.2021.103957
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0921889021002323
+      \endverb
+    \endentry
     \entry{Filotheou2022iA}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=6318c21a509fd6bf32b6f0b5e88a8e16}{%

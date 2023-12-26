@@ -1,22 +1,22 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
-[1] Config.pm:343> INFO - Logfile is 'cv_alexandros_filotheou.blg'
-[65] biber:287> INFO - === Tue Dec 26, 2023, 00:37:31
-[189] Biber.pm:348> INFO - Reading 'cv_alexandros_filotheou.bcf'
-[391] Biber.pm:742> INFO - Found 12 citekeys in bib section 0
-[399] Biber.pm:3151> INFO - Processing section 0
-[443] Biber.pm:3308> INFO - Looking for bibtex format file 'papers_during_phd.bib' for section 0
-[491] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[537] bibtex.pm:974> INFO - Found BibTeX data source 'papers_during_phd.bib'
-[765] Utils.pm:147> WARN - The field 'doi' in entry '8739423' cannot be null, deleting it
-[766] Utils.pm:147> WARN - The field 'number' in entry '8739423' cannot be null, deleting it
-[766] Utils.pm:147> WARN - The field 'volume' in entry '8739423' cannot be null, deleting it
-[766] Utils.pm:147> WARN - The field 'doi' in entry '8739486' cannot be null, deleting it
-[766] Utils.pm:147> WARN - The field 'number' in entry '8739486' cannot be null, deleting it
-[766] Utils.pm:147> WARN - The field 'volume' in entry '8739486' cannot be null, deleting it
-[1092] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1092] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1092] Biber.pm:3028> INFO - Sorting list 'ynt/global' of type 'entry' with scheme 'ynt' and locale 'en-US'
-[1092] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[1132] bbl.pm:519> INFO - Writing 'cv_alexandros_filotheou.bbl' with encoding 'UTF-8'
-[1271] bbl.pm:615> INFO - Output to cv_alexandros_filotheou.bbl
-[1271] Biber.pm:109> INFO - WARNINGS: 6
+[0] Config.pm:343> INFO - Logfile is 'cv_alexandros_filotheou.blg'
+[64] biber:287> INFO - === Tue Dec 26, 2023, 13:25:28
+[199] Biber.pm:348> INFO - Reading 'cv_alexandros_filotheou.bcf'
+[415] Biber.pm:742> INFO - Found 13 citekeys in bib section 0
+[423] Biber.pm:3151> INFO - Processing section 0
+[469] Biber.pm:3308> INFO - Looking for bibtex format file 'papers_during_phd.bib' for section 0
+[521] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[566] bibtex.pm:974> INFO - Found BibTeX data source 'papers_during_phd.bib'
+[812] Utils.pm:147> WARN - The field 'doi' in entry '8739423' cannot be null, deleting it
+[812] Utils.pm:147> WARN - The field 'number' in entry '8739423' cannot be null, deleting it
+[812] Utils.pm:147> WARN - The field 'volume' in entry '8739423' cannot be null, deleting it
+[813] Utils.pm:147> WARN - The field 'doi' in entry '8739486' cannot be null, deleting it
+[813] Utils.pm:147> WARN - The field 'number' in entry '8739486' cannot be null, deleting it
+[813] Utils.pm:147> WARN - The field 'volume' in entry '8739486' cannot be null, deleting it
+[1145] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1145] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1145] Biber.pm:3028> INFO - Sorting list 'ynt/global' of type 'entry' with scheme 'ynt' and locale 'en-US'
+[1145] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[1186] bbl.pm:519> INFO - Writing 'cv_alexandros_filotheou.bbl' with encoding 'UTF-8'
+[1332] bbl.pm:615> INFO - Output to cv_alexandros_filotheou.bbl
+[1333] Biber.pm:109> INFO - WARNINGS: 6
