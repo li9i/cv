@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber cv_alexandros_filotheou"] 1703590094 "cv_alexandros_filotheou.bcf" "cv_alexandros_filotheou.bbl" "cv_alexandros_filotheou" 1703590102
-  "cv_alexandros_filotheou.bcf" 1703590102 90843 97b4dc0624997b9d31e0363ffc4459e9 ""
-  "papers_during_phd.bib" 1703589859 7235 2f1a231d46aa23e408de4cb6c13c36fc ""
+["biber cv_alexandros_filotheou"] 1703590531 "cv_alexandros_filotheou.bcf" "cv_alexandros_filotheou.bbl" "cv_alexandros_filotheou" 1703590539
+  "cv_alexandros_filotheou.bcf" 1703590538 90955 bb6975da609ebfa40995d873b1c3a28b ""
+  "papers_during_phd.bib" 1703590356 8235 29be9a1324ef548fb08fd8e87e555e05 ""
   (generated)
   "cv_alexandros_filotheou.bbl"
-["pdflatex"] 1703590099 "cv_alexandros_filotheou.tex" "cv_alexandros_filotheou.pdf" "cv_alexandros_filotheou" 1703590102
+["pdflatex"] 1703590536 "cv_alexandros_filotheou.tex" "cv_alexandros_filotheou.pdf" "cv_alexandros_filotheou" 1703590539
   "/home/li9i/.texmf-var/luatex-cache/generic/fonts/otf/fontawesome.luc" 1680209683 60179 bc98c877d52732451fd3ed5508eddb4a ""
   "/home/li9i/.texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc" 1516669971 76968 24fe0b544b204981d02455b141d0af97 ""
   "/home/li9i/.texmf-var/luatex-cache/generic/fonts/otf/lmroman10-bold.luc" 1516669971 109569 df760f585d899526e9314a488c87ef2b ""
@@ -190,17 +190,17 @@
   "/usr/share/texmf/tex/latex/tipa/t3cmr.fd" 1414244106 1257 fd5b1c2f0106f9cf12cdb2ff961987c5 ""
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1414244106 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/var/lib/texmf/web2c/luatex/lualatex.fmt" 1552154918 1293991 9bf208ba49e7af3e387c162bdfb12c94 ""
-  "cv_alexandros_filotheou.aux" 1703590102 3403 7fc7aad30aa94f15f29289307f05b1c4 ""
-  "cv_alexandros_filotheou.bbl" 1703590096 30470 ac319cd346e0d3035d9d824e8a64b75d "biber cv_alexandros_filotheou"
-  "cv_alexandros_filotheou.out" 1703590102 468 de67d62cb382bc2c5f0610db01476c6a ""
-  "cv_alexandros_filotheou.run.xml" 1703590102 2452 2631f534784d0e6a752bab6fe476f3cf ""
-  "cv_alexandros_filotheou.tex" 1703590021 21130 73f654fc007e030f249a233bdbf607b2 ""
-  "papers_during_phd.bib" 1703589859 7235 2f1a231d46aa23e408de4cb6c13c36fc ""
+  "cv_alexandros_filotheou.aux" 1703590538 3461 d50d58e0bb5f0f3ffda53e3cd6d98cff ""
+  "cv_alexandros_filotheou.bbl" 1703590533 33662 c6bd6ce5629993b136540585fbfb720b "biber cv_alexandros_filotheou"
+  "cv_alexandros_filotheou.out" 1703590538 468 de67d62cb382bc2c5f0610db01476c6a ""
+  "cv_alexandros_filotheou.run.xml" 1703590538 2452 2631f534784d0e6a752bab6fe476f3cf ""
+  "cv_alexandros_filotheou.tex" 1703590524 21187 95e389112961a211fb34da69eefcf123 ""
+  "papers_during_phd.bib" 1703590356 8235 29be9a1324ef548fb08fd8e87e555e05 ""
   (generated)
-  "cv_alexandros_filotheou.aux"
+  "cv_alexandros_filotheou.run.xml"
   "cv_alexandros_filotheou.pdf"
   "cv_alexandros_filotheou.log"
-  "cv_alexandros_filotheou.out"
-  "/home/li9i/.texmf-var/m_t_x_t_e_s_t.tmp"
   "cv_alexandros_filotheou.bcf"
-  "cv_alexandros_filotheou.run.xml"
+  "cv_alexandros_filotheou.aux"
+  "/home/li9i/.texmf-var/m_t_x_t_e_s_t.tmp"
+  "cv_alexandros_filotheou.out"

@@ -19,6 +19,48 @@
 
 \refsection{0}
   \sortlist[entry]{ynt/global}
+    \entry{Filotheou2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=6318c21a509fd6bf32b6f0b5e88a8e16}{%
+           family={Filotheou},
+           family_i={F\bibinitperiod},
+           given={Alexandros},
+           given_i={A\bibinitperiod}}}%
+        {{hash=b4c65b04a0ecc14513437f49ec0436c2}{%
+           family={Nikou},
+           family_i={N\bibinitperiod},
+           given={Alexandros},
+           given_i={A\bibinitperiod}}}%
+        {{hash=741077bb9e9f6f1223a7f0354ceeb761}{%
+           family={Dimarogonas},
+           family_i={D\bibinitperiod},
+           given={Dimos\bibnamedelima V.},
+           given_i={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e313ec18abef4243f2ead85051703bdc}
+      \strng{fullhash}{e313ec18abef4243f2ead85051703bdc}
+      \field{labelalpha}{FND18}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 European Control Conference (ECC)}
+      \field{isbn}{978-3-9524-2698-2}
+      \field{month}{06}
+      \field{title}{{Decentralized Control of Uncertain Multi-Agent Systems with Connectivity Maintenance and Collision Avoidance}}
+      \field{year}{2018}
+      \field{pages}{8\bibrangedash 13}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.23919/ECC.2018.8550343
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8550343/
+      \endverb
+    \endentry
     \entry{8739486}{inproceedings}{}
       \name{author}{11}{}{%
         {{hash=87ad3b6ab215e6c089217399b010fba2}{%
@@ -155,6 +197,47 @@
       \field{year}{2019}
       \field{pages}{1\bibrangedash 5}
       \range{pages}{5}
+    \endentry
+    \entry{Filotheou2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6318c21a509fd6bf32b6f0b5e88a8e16}{%
+           family={Filotheou},
+           family_i={F\bibinitperiod},
+           given={Alexandros},
+           given_i={A\bibinitperiod}}}%
+        {{hash=b4c65b04a0ecc14513437f49ec0436c2}{%
+           family={Nikou},
+           family_i={N\bibinitperiod},
+           given={Alexandros},
+           given_i={A\bibinitperiod}}}%
+        {{hash=741077bb9e9f6f1223a7f0354ceeb761}{%
+           family={Dimarogonas},
+           family_i={D\bibinitperiod},
+           given={Dimos\bibnamedelima V.},
+           given_i={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e313ec18abef4243f2ead85051703bdc}
+      \strng{fullhash}{e313ec18abef4243f2ead85051703bdc}
+      \field{labelalpha}{FND20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8343b463aacf48517c044b4d2c9c45ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0020-7179}
+      \field{journaltitle}{International Journal of Control}
+      \field{month}{06}
+      \field{number}{6}
+      \field{title}{{Robust decentralised navigation of multi-agent systems with collision avoidance and connectivity maintenance using model predictive controllers}}
+      \field{volume}{93}
+      \field{year}{2020}
+      \field{pages}{1470\bibrangedash 1484}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1080/00207179.2018.1514129
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129
+      \endverb
     \endentry
     \entry{Filotheou2020cA}{article}{}
       \name{author}{5}{}{%
