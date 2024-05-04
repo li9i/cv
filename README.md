@@ -1,5 +1,3 @@
-# My curriculum vitae
-
 Table of Contents
 =================
 
