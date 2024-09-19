@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1726769469 "cv_alexandros_filotheou.tex" "cv_alexandros_filotheou.pdf" "cv_alexandros_filotheou" 1726769470
+["pdflatex"] 1726770518 "cv_alexandros_filotheou.tex" "cv_alexandros_filotheou.pdf" "cv_alexandros_filotheou" 1726770520
   "/home/li9i/.texmf-var/luatex-cache/generic/fonts/otf/fontawesome.luc" 1680209683 60179 bc98c877d52732451fd3ed5508eddb4a ""
   "/home/li9i/.texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc" 1516669971 76968 24fe0b544b204981d02455b141d0af97 ""
   "/home/li9i/.texmf-var/luatex-cache/generic/fonts/otf/lmroman10-bold.luc" 1516669971 109569 df760f585d899526e9314a488c87ef2b ""
@@ -187,12 +187,12 @@
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1414244106 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/var/lib/texmf/web2c/luatex/lualatex.fmt" 1552154918 1293991 9bf208ba49e7af3e387c162bdfb12c94 ""
   "alefilot.sty" 1726763673 963 00c592e150d8b33735deab522c2736e3 ""
-  "cv_alexandros_filotheou.aux" 1726769470 1286 cf16659c3c69f71b2b8ee6370908c228 ""
-  "cv_alexandros_filotheou.out" 1726769470 328 860b63b68e24191b3df3ab5ff1bf5885 ""
-  "cv_alexandros_filotheou.tex" 1726769467 9939 8c29113eb7d72a151b53935eb3a01022 ""
+  "cv_alexandros_filotheou.aux" 1726770520 1209 40e31d9e121b961d2f0824f4eb23ff1b ""
+  "cv_alexandros_filotheou.out" 1726770520 288 ccd84808ed29531bc6a11601303e1096 ""
+  "cv_alexandros_filotheou.tex" 1726770518 10003 d4f0561549298ef3edf38a80bcc109bc ""
   (generated)
-  "cv_alexandros_filotheou.pdf"
-  "cv_alexandros_filotheou.log"
   "cv_alexandros_filotheou.aux"
+  "cv_alexandros_filotheou.log"
+  "cv_alexandros_filotheou.pdf"
   "/home/li9i/.texmf-var/m_t_x_t_e_s_t.tmp"
   "cv_alexandros_filotheou.out"
