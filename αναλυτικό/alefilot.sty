@@ -1,0 +1,39 @@
+% BOXES
+\usepackage[many]{tcolorbox}
+\usepackage{environ}
+\NewEnviron{gg_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=black!5, colframe=white!80!, breakable]
+  %\begin{tcolorbox}[colback=white!10, colframe=black!30!, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\definecolor{sticky_note_yellow}{cmyk}{0.0, 0.0, 0.06, 0.0, 1.00}
+\NewEnviron{sticky_note_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback = sticky_note_yellow, colframe=sticky_note_yellow, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{bw_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=white!10, colframe=black!80!, arc=0pt,outer arc=0pt, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{gw_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=white!10, colframe=black!10!, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{bg_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=black!10, colframe=black!80!, arc=0pt,outer arc=0pt, breakable]
+    \BODY
+  \end{tcolorbox}
+}
