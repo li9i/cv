@@ -25,15 +25,20 @@
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
 
+% FOOTER
 \usepackage{fancyhdr}
 \setlength{\headheight}{15.2pt}
 \setlength{\textheight}{710pt}
+\setlength{\footskip}{80pt} % Distance from bottom of text to footer
 \pagestyle{fancy}
 \fancyhead[]{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot[LO,RE]{\footnotesize Thessaloniki, Greece; July 2024  \hfill contact: (+30) 693 87 87 677 $|$ alexandros.filotheou@gmail.com\\
  \hfill source: \href{https://github.com/li9i/cv}{https://github.com/li9i/cv}}
 
+
+% If small portions of text are spilling onto the second page, consider a manual adjustment:
+\enlargethispage{2\baselineskip} % Adds two lines of vertical space
 
 \usepackage{wasysym}
 \usepackage{fontawesome}
@@ -54,23 +59,31 @@
 %	SUMMARY
 %----------------------------------------------------------------------------------------
 \vspace{-0.5cm}
-\begin{bw_box}
+\begin{bw_box} \small
   I hold a \href{https://ikee.lib.auth.gr/record/354644}{PhD in Robotics} and I
   am qualified with a
   \href{http://kth.diva-portal.org/smash/record.jsf?pid=diva2\%3A1102597\&dswid=2875}{Master's degree in Control and Robotics}.
-  I have 7+ years of hands-on experience which includes SLAM, \href{https://github.com/li9i/fsm-lo}{localisation},
+  I have 7+ years of hands-on experience that includes SLAM, \href{https://github.com/li9i/fsm-lo}{localisation},
   \href{https://link.springer.com/article/10.1007/s10846-019-01086-y}{autonomous navigation}, \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{control},
   \href{https://github.com/li9i/pandora\_vision\_2014}{Computer Vision}, and
   general integration and problem-solving. These I have acquired in \href{https://relief.web.auth.gr/\%CF\%81\%CE\%BF\%CE\%BC\%CF\%80\%CE\%BF\%CF\%84\%CE\%B9\%CE\%BA\%CE\%AC-\%CE\%BF\%CF\%87\%CE\%AE\%CE\%BC\%CE\%B1\%CF\%84\%CE\%B1/}{real
-  conditions with real robots} as well as in simulation. I have mainly used ROS
-  and ROS 2, but also MATLAB/Octave, all the while under Linux. My primary
-  coding language is \href{https://github.com/li9i/fsm}{C++} and my secondary
+  conditions with real robots} as well as in simulation, working for research
+  projects funded by the European Commission and the Greek state. I have mainly
+  used ROS and ROS 2, but also MATLAB/Octave, all the while under Linux. My
+  primary coding language is \href{https://github.com/li9i/fsm}{C++} and my
+  secondary
   \href{https://github.com/cultureid-auth-ros-packages/cultureid-waypoints-following}{Python}.
-  I enjoy documenting my motivation and contributions in a clear and concise
+  I have deliberately chosen the academic + software engineering path because I
+  wanted to reconcile the two dominant types of engineers: the academic type
+  whose coding boundary is MATLAB, and the software engineering type whose
+  boundary is code.
+  It is my pleasure to document my motivation and contributions in a clear and concise
   manner that acknowledges my audience's existing knowledge with regard to
   \href{https://github.com/li9i/pandora_vision_2014/blob/hydro-devel/pandora_vision_hole_detector/src/hole_fusion_node/hole_fusion.cpp}{code},
   \href{https://www.youtube.com/watch?v=xaDKjI0WkDc}{presentations}, \href{https://ieeexplore.ieee.org/abstract/document/9981228}{technical papers},
   or \href{https://github.com/li9i/ros1_humble_bridge_template}{tutorials}. Most of all I enjoy being a member of a team and solving problems.
+
+  Thank you for taking the time to read this.
 \end{bw_box}
 
 
@@ -81,16 +94,16 @@
 \begin{tabular}{rp{12cm}}
   \href{https://raw.githubusercontent.com/li9i/portfolio/master/portfolio.pdf}{\texttt{Portfolio}} & \\
 
-  Indicative publications: &
-\href{https://ieeexplore.ieee.org/abstract/document/9981228}{[1]}
-\href{https://www.sciencedirect.com/science/article/abs/pii/S0921889021002323}{[2]}
-\href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[3]} --- \href{https://scholar.google.com/citations?view\_op=list\_works\&hl=en\&user=9\_hI4hMAAAAJ}{google scholar}\\
-
   Indicative software packages: &
 \href{https://github.com/li9i/cbgl}{\texttt{cbgl}} $\cdot$
 \href{https://github.com/li9i/fsm-lo}{\texttt{fsm-lo}} $\cdot$
 \href{https://github.com/li9i/lama-odom}{\texttt{lama-odom}} $\cdot$
-\href{https://github.com/li9i/pandora\_vision\_2014/tree/hydro-devel/pandora\_vision\_hole\_detector}{\texttt{pvhd}} --- \href{https://github.com/li9i}{\texttt{github}}\\
+\href{https://github.com/li9i/pandora\_vision\_2014/tree/hydro-devel/pandora\_vision\_hole\_detector}{\texttt{pvhd}} --- \href{https://github.com/li9i}{\texttt{my github profile}}\\
+
+  Indicative publications: &
+\href{https://ieeexplore.ieee.org/abstract/document/9981228}{[1]}
+\href{https://www.sciencedirect.com/science/article/abs/pii/S0921889021002323}{[2]}
+\href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[3]} --- \href{https://scholar.google.com/citations?view\_op=list\_works\&hl=en\&user=9\_hI4hMAAAAJ}{my google scholar profile}\\
 
   Demos / videos: & \href{https://www.youtube.com/watch?v=xaDKjI0WkDc}{\texttt{cbgl}} $\cdot$ \href{https://www.youtube.com/watch?v=hB4qsHCEXGI}{\texttt{fsm}} $\cdot$ \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{\texttt{cultureid}} $\cdot$ \href{https://relief.web.auth.gr/}{\texttt{relief}} $\cdot$ \href{https://www.youtube.com/watch?v=937OZez1iN8}{\texttt{mpc}}
 \end{tabular}\\
@@ -101,24 +114,25 @@
 
 \section{Work Experience}
 
-\begin{tabular}{rp{12cm}}
-$2023.09 - \hfill \textnormal{present} \hfill$ & \textbf{Postdoctoral Research Associate} \\
-                    & Center for Research and Technology Hellas (CERTH), Thessaloniki, Greece\\
+\begin{tabular}{rlp{12cm}}
+%-------------------------------------------------------------------------------
+$2023.09 - \hfill \textnormal{present} \hfill$ & & \textbf{Postdoctoral Research Associate} \\
+                                               & & Center for Research and Technology Hellas (CERTH), Thessaloniki, Greece\\
 &\\
-$2018.09 - 2023.03$ & \textbf{Research Engineer} for NSRF projects\\
-                    & Aristotle University of Thessaloniki, Greece\\
+  $2018.09 - 2023.03$ & \hspace{-0.4cm} [4.5Y] & \textbf{Research Engineer} for NSRF projects\\
+                      & \hspace{-0.4cm}        & Aristotle University of Thessaloniki, Greece\\
 &\\
-$2016.09 - 2016.11$ & \textbf{Teaching Assistant} $\cdot$ DD2380 Artificial Intelligence\\
-                    & KTH Royal Institute of Technology, Stockholm, Sweden\\
+$2016.09 - 2016.11$   & \hspace{-0.4cm} [3 mo] & \textbf{Teaching Assistant} $\cdot$ DD2380 Artificial Intelligence\\
+                      & \hspace{-0.4cm}        & KTH Royal Institute of Technology, Stockholm, Sweden\\
 &\\
-%------------------------------------------------
-$2011.10 - 2012.03$ & \textbf{Database Designer} $\cdot$ Egnatia Motorway S.A., Thessaloniki, Greece\\
-%------------------------------------------------
-$2011.03 - 2011.05$ & \textbf{Application Developer} (Int) $\cdot$ Egnatia Motorway S.A., Thessaloniki, Greece\\
-%------------------------------------------------
-$2008.07 - 2009.06$ & \textbf{Telecommunications Engineer} $\cdot$ OTE Group, Thessaloniki, Greece\\
+%-------------------------------------------------------------------------------
+$2011.10 - 2012.03$   & \hspace{-0.4cm} [6 mo]& \textbf{Database Designer} $\cdot$ Egnatia Motorway S.A., Thessaloniki, Greece\\
+%-------------------------------------------------------------------------------
+$2011.03 - 2011.05$   & \hspace{-0.4cm} [3 mo]& \textbf{Application Developer} (Int) $\cdot$ Egnatia Motorway S.A., Thessaloniki, Greece\\
+%-------------------------------------------------------------------------------
+$2008.07 - 2009.06$   & \hspace{-0.4cm} [1Y] & \textbf{Telecommunications Engineer} $\cdot$ OTE Group, Thessaloniki, Greece\\
 &\\
-%------------------------------------------------
+%-------------------------------------------------------------------------------
 %$07.2008 - 06.2009$ & \textbf{ADSL Technical Support} $\cdot$ Hellenic Telecommunications S.A., Thessaloniki, Greece\\
 \end{tabular}
 
@@ -173,9 +187,10 @@ Control Techniques & MPC \\
 \section{Languages}
 
 \begin{tabular}{rp{12cm}}
-  English & Fluent --- IELTS Score $8.5$ \ \ (Greek Native) \vspace{0.0cm}
+  English & Fluent --- IELTS Score $8.5$ \ \ (Greek Native)
 \end{tabular}
 
+\vspace{0.2cm}
 %----------------------------------------------------------------------------------------
 %	References
 %----------------------------------------------------------------------------------------
