@@ -31,6 +31,19 @@
 %\fancyfoot[LO,RE]{Curriculum Vitae - Alexandros Filotheou}
 \fancyfoot[LO,RE]{}
 
+\usepackage{tocloft}
+\setcounter{tocdepth}{1}
+
+% Custom ToC appearance
+\setlength{\cftbeforesecskip}{4pt}
+\setlength{\cftbeforesubsecskip}{2pt}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{20pt}
+\setlength{\cftsecnumwidth}{3em}
+\setlength{\cftsubsecnumwidth}{4em}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsubsecfont}{\itshape}
+\renewcommand{\cftsecpagefont}{\bfseries}
 
 
 \usepackage{wasysym}
@@ -313,7 +326,17 @@ year = {2023}
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge Alexandros Filotheou}\bigskip\par}
+\par{\centering{\Huge Dr Alexandros Philotheou}\bigskip\par}
+\vspace{4em}
+\begin{center}
+\begin{tabular}{rp{10cm}}
+Current location and age                & Thessaloniki, Greece | $38$ \\
+Phone                                   & (+30) 693 87 87 677 \\
+e-mail                                  & \href{mailto:alexandros.filotheou@gmail.com}{alexandros.filotheou@gmail.com}
+\end{tabular}
+\end{center}
+
+\vfill
 
 %----------------------------------------------------------------------------------------
 %	SUMMARY
@@ -345,25 +368,15 @@ year = {2023}
   or \href{https://github.com/li9i/ros1_humble_bridge_template}{tutorials}. Most of all I enjoy being a member of a team and solving problems together with other people.
 \end{bw_box}
 
+\vfill
+\tableofcontents
 
-
-
-\section{Personal Details}
-
-\begin{tabular}{rp{10cm}}
-Place and Date of Birth 	              & Thessaloniki, Greece | $8$ Nov $1987$ \\
-Current location and Date of CV update  & Thessaloniki, Greece | April 2025 \\
-Address            			                & Plagiari, $57500$, PO Box $530$, Thessaloniki, Greece \\
-%Address            			  & Kungshamra $71$, $17070$, Stockholm, Sweden \\
-%Phone						& $(+30)$ $693-8787677$ | $(+30)$ $23920-25138$ \\
-Phone                                   & (+30) 693 87 87 677 \\
-e-mail                                  & \href{mailto:alexandros.filotheou@gmail.com}{alexandros.filotheou@gmail.com}
-\end{tabular}
-
+\newpage
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
+\vspace*{\fill}
 
 \section{Work Experience}
 
@@ -408,10 +421,14 @@ $2008.07 - 2009.06$ & \textbf{Telecommunications Engineer} \\
 &\\
 \end{tabular}
 
+\vspace*{\fill}
+\newpage
+
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 
+\vspace*{\fill}
 \section{Experience in R\&D Projects}
 
 \begin{tabular}{rp{11cm}}
@@ -448,11 +465,14 @@ RoboCup Rescue competition.}\\
 \multicolumn{2}{c}{} \\
 \end{tabular}
 
+\vspace*{\fill}
+\newpage
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
+\vspace*{\fill}
 \section{Education}
 
 \begin{tabular}{rp{11cm}}
@@ -495,6 +515,8 @@ $2005.09 - 2013.07$  & \textbf{Diploma} \\
 
 \end{tabular}
 
+\vspace*{\fill}
+\newpage
 
 
 %----------------------------------------------------------------------------------------
@@ -543,6 +565,8 @@ $2005.09 - 2013.07$  & \textbf{Diploma} \\
 }\\
 
 
+\vspace*{\fill}
+\newpage
 
 %----------------------------------------------------------------------------------------
 %	Distinctions
