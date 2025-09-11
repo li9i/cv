@@ -1,29 +1,20 @@
 \documentclass[a4paper,10pt,twoside]{article}
 \usepackage{alefilot}
 \usepackage{fontspec}
-\usepackage{fontspec}
 \usepackage[utf8]{inputenc}
-\usepackage[top=10mm, bottom=1mm, inner=30mm, outer=30mm, footskip = 20mm]{geometry}
-
-%\defaultfontfeatures{Mapping=tex-text}
-%\setmainfont[Mapping=tex-text]{GFS Didot} % Main document font
+\usepackage[top=10mm, bottom=1mm, inner=20mm, outer=20mm, footskip=20mm]{geometry}
 \setmainfont{Latin Modern Roman} % Main document font
 
-%\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
-
-%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be
-\usepackage{fullpage}
 % To reduce the height of the top margin uncomment:
-\addtolength{\voffset}{-1.75cm}
+%\addtolength{\voffset}{-1.75cm}
 
-\usepackage{hyperref} % Required for adding links	and customizing them
+\usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
-\usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
-
 
 % FOOTER
 \usepackage{fancyhdr}
@@ -33,10 +24,7 @@
 \pagestyle{fancy}
 \fancyhead[]{}
 \renewcommand{\headrulewidth}{0pt}
-%\fancyfoot[LO,RE]{\footnotesize Thessaloniki, Greece. APR 2025  \hfill contact: (+30) 693 87 87 677 $|$ alexandros.filotheou@gmail.com\\
- %\hfill source: \href{https://github.com/li9i/cv}{https://github.com/li9i/cv}}
 \fancyfoot[LO,RE]{source \href{https://github.com/li9i/cv}{https://github.com/li9i/cv} $|$ APR 2025}
-
 
 % If small portions of text are spilling onto the second page, consider a manual adjustment:
 \enlargethispage{2\baselineskip} % Adds two lines of vertical space
@@ -47,7 +35,6 @@
 
 \begin{document}
 
-%\pagestyle{plain} % Removes page numbering
 \pagenumbering{gobble}
 
 %----------------------------------------------------------------------------------------
@@ -99,23 +86,32 @@
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
+\section{Experience}
 
-\section{Work Experience}
+  \textbf{Robotics Engineer} $\cdot$ CERTH, Thessaloniki GR \hfill Sep 2023 -- Present \\
+  \begin{minipage}[t]{\textwidth}
+    \begin{itemize}
+      \item Item 1 description here \vspace{-0.8em}
+      \item Item 2 description here \vspace{-0.8em}
+      \item Item 3 description here
+    \end{itemize}
+  \end{minipage} \\[0.4em]
 
-\begin{tabular}{rlp{12cm}}
-%-------------------------------------------------------------------------------
-$\textnormal{Sep }2023- \hfill \textnormal{present} \hfill$ & & \textbf{Robotics Engineer} \\
-                                                            & & \small{Center for Research and Technology Hellas (CERTH), Thessaloniki, Greece}\\\vspace{-7pt}
-&\\
-$\textnormal{Sep }2018 - \textnormal{Mar } 2023$ & \hspace{-0.4cm} [4.5Y] & \textbf{Robotics and Control Engineer} \\
-                                                 & \hspace{-0.4cm}        & \small{ECE Department, Aristotle University of Thessaloniki, Greece}\\\vspace{-7pt}
-&\\
-$\textnormal{Sep }2016 - \textnormal{Nov } 2016$ & \hspace{-0.4cm} [3 mo] & \textbf{Teaching Assistant} $\cdot$ DD2380 Artificial Intelligence\\
-                                                 & \hspace{-0.4cm}        & \small{KTH Royal Institute of Technology, Stockholm, Sweden}\\\vspace{-7pt}
-& \vspace{-3pt}
-\end{tabular}
+  \textbf{Robotics and Control Engineer} $\cdot$ ECE dept., AUTh, Thessaloniki GR \hfill Sep 2018 -- Mar 2023 \\
+  \begin{minipage}[t]{\textwidth}
+    \begin{itemize}
+      \item Technical leader of everything robotics in two NSRF projects: \href{https://relief.web.auth.gr/language/en/home/}{relief} $\cdot$ \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{cultureid} \vspace{-0.8em}
+      \item Technical leader of everything robotics in two NSRF projects \vspace{-0.8em}
+      \item Item 3 description here
+    \end{itemize}
+  \end{minipage} \\[0.4em]
 
-
+  \textbf{Teaching Assistant} $\cdot$ KTH Royal Inst. of Technology, Stockholm SE \hfill Sep 2016 -- Nov 2016 \\
+  \begin{minipage}[t]{\textwidth}
+    \begin{itemize}
+      \item Examiner for DD2380 - Artificial Intelligence under the supervision of Prof. Patric Jensfelt
+    \end{itemize}
+  \end{minipage}
 %----------------------------------------------------------------------------------------
 %	VOLUNTARY EXPERIENCE
 %----------------------------------------------------------------------------------------
