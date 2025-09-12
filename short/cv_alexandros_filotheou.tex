@@ -20,11 +20,11 @@
 \usepackage{fancyhdr}
 \setlength{\headheight}{15.2pt}
 \setlength{\textheight}{710pt}
-\setlength{\footskip}{80pt} % Distance from bottom of text to footer
+\setlength{\footskip}{90pt} % Distance from bottom of text to footer; increase to place lower
 \pagestyle{fancy}
 \fancyhead[]{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[LO,RE]{\hfill \small source: \href{https://github.com/li9i/cv}{\texttt{https://github.com/li9i/cv}} --- APR 2025}
+\fancyfoot[LO,RE]{\hfill \small source: \href{https://github.com/li9i/cv}{\texttt{https://github.com/li9i/cv}} --- SEP 2025}
 
 % If small portions of text are spilling onto the second page, consider a manual adjustment:
 \enlargethispage{2\baselineskip} % Adds two lines of vertical space
@@ -51,15 +51,7 @@
 %----------------------------------------------------------------------------------------
 \vspace{-0.5cm}
 \begin{bw_box} \small
-  \hspace{1em}I have 7+ years of hands-on experience in robotics which includes SLAM, \href{https://github.com/li9i/fsm-lo}{Localisation},
-  \href{https://link.springer.com/article/10.1007/s10846-019-01086-y}{Autonomous Navigation}, \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{Control},
-  \href{https://github.com/li9i/pandora\_vision\_2014}{Computer Vision}, and
-  general integration, problem-solving, and troubleshooting. These I have acquired in \href{https://relief.web.auth.gr/\%CF\%81\%CE\%BF\%CE\%BC\%CF\%80\%CE\%BF\%CF\%84\%CE\%B9\%CE\%BA\%CE\%AC-\%CE\%BF\%CF\%87\%CE\%AE\%CE\%BC\%CE\%B1\%CF\%84\%CE\%B1/}{real
-  conditions with real robots} as well as in simulation, working for research
-  projects funded by the European Commission and the Greek State, or through
-  volunteering. I am proficient in ROS and ROS 2, in versioning through git, virtualisation via Docker, and also in MATLAB/Octave, all
-  the while under Linux. My primary coding language is \href{https://github.com/li9i/fsm}{C++} and my secondary
-  \href{https://github.com/cultureid-auth-ros-packages/cultureid-waypoints-following}{Python}.
+  Robotics engineer with 7+ years of experience in SLAM, \href{https://github.com/li9i/fsm-lo}{localisation}, \href{https://link.springer.com/article/10.1007/s10846-019-01086-y}{autonomous navigation}, \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{control}, and \href{https://github.com/li9i/pandora\_vision\_2014}{computer vision}. Skilled in deploying solutions from simulation to real-world robots across \href{https://www.robetarme-project.eu/}{EU-funded projects} and \href{https://issel.ee.auth.gr/pandora-robotics/}{volunteer initiatives}. Proficient in ROS/ROS 2, Git, Docker, and MATLAB/Octave on Linux, with strong coding expertise in \href{https://github.com/li9i/fsm}{C++} and \href{https://github.com/cultureid-auth-ros-packages/cultureid-waypoints-following}{Python}. Recognised for bridging research and practical deployment to deliver reliable autonomous systems.
 \end{bw_box}
 
 
@@ -80,67 +72,70 @@
   Indicative publications &
   \href{https://ieeexplore.ieee.org/abstract/document/10802235}{[\texttt{cbgl}]} $\cdot$
   \href{https://ieeexplore.ieee.org/abstract/document/9981228}{[\texttt{fsm}]} $\cdot$
-  \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[\texttt{multi-mpc}]} \\
+  \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[\texttt{multi-mpc}]}
 
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
-\section{Experience}
+\section{\textbf{Experience}}
 
-  \noindent\textbf{Robotics Engineer} $\cdot$ CERTH, Thessaloniki GR \hfill Sep 2023 -- Present \\
+  \noindent\textbf{Robotics Engineer} $\cdot$ ITI-CERTH, Thessaloniki GR \hfill {\small Sep $2023$ -- Present} \\
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
-      \item Head of software integration and sole git repository maintainer of EU-funded R\&D project \href{https://www.robetarme-project.eu/}{RoBétArmé}\vspace{-0.8em}
-      \item Organised and deployed ROS and ROS 2 nodes and other software in over 50 Docker images over real \& simulated ground mobile bases and supporting computing units\vspace{-0.8em}
-      \item Bridged ROS with ROS 2 in terms of interfaces and over multiple machines
+      \item Lead software integrator and sole Git repository maintainer for the EU-funded R\&D project \href{https://www.robetarme-project.eu/}{RoBétArmé}, ensuring code quality and streamlined collaboration\vspace{-0.8em}
+      \item Designed, organised, and deployed 50+ Dockerized ROS/ROS 2 packages and supporting software across real and simulated ground mobile robotic platforms and computing units\vspace{-0.8em}
+      \item Implemented robust ROS-ROS 2 interoperability across multiple machines, enabling seamless communication and system integration
     \end{itemize}
   \end{minipage} \\[0.4em]
 
-  \noindent\textbf{Robotics and Control Engineer} $\cdot$ ECE dept., Aristotle University of Thessaloniki GR \hfill Sep 2018 -- Mar 2023 \\
+  \noindent\textbf{Robotics and Control Engineer} $\cdot$ ECE dept., Aristotle University of Thessaloniki GR \hfill {\small Sep $2018$ -- Mar $2023$} \\
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
-      \item Technical lead of everything robotics in NSRF R\&D projects \href{https://relief.web.auth.gr/language/en/home/}{Relief} and \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{CultureId} \vspace{-0.8em}
-      \item Implemented and deployed SLAM, autonomous exploration \& navigation, 3D reconstruction, and corresponding friendly GUIs for real \& simulated ground and aerial mobile bases\vspace{-0.8em}
-      \item Decreased RFID-tag localisation error by 4x by decreasing and robustifying LIDAR-derived particle and Kalman filter robot pose error by 7x \vspace{-0.8em}
-      \item Implemented and deployed mobile robot-human gui-interactive applications which have served more than 3000 visitors at the Archaeological Museum of Thessaloniki from early '23 to date \vspace{-0.8em}
-      \item Coauthored \& supported implementation behind eighteen high-ranking journal \& conference publications
+      \item Technical lead for robotics in NSRF R\&D projects \href{https://relief.web.auth.gr/language/en/home/}{Relief} and \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{CultureId}: system design, implementation, and deployment \vspace{-0.8em}
+      \item Developed and deployed SLAM, autonomous exploration \& navigation, 3D reconstruction, and intuitive GUI tools for both real and simulated ground and aerial robotic platforms \vspace{-0.8em}
+      \item Reduced RFID-tag localization error 2x by optimizing and robustifying LIDAR-based particle and Kalman filter pose estimation, achieving 2x improvement in accuracy \vspace{-0.8em}
+      \item Designed and deployed interactive human--mobile-robot applications, used by 3,000+ visitors at the Archaeological Museum of Thessaloniki since early 2023 \vspace{-0.8em}
+      \item Coauthored \& supported implementation behind 18 high-impact publications in top-tier journals and conferences
     \end{itemize}
   \end{minipage} \\[0.4em]
 
-  \noindent\textbf{Teaching Assistant} $\cdot$ KTH Royal Institute of Technology, Stockholm SE \hfill Sep 2016 -- Nov 2016 \\
+  \noindent\textbf{Teaching Assistant} $\cdot$ KTH Royal Institute of Technology, Stockholm SE \hfill {\small Sep $2016$ -- Nov $2016$} \\
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
-      \item Examiner for \textit{DD2380 - Artificial Intelligence}, supervised by Prof. Patric Jensfelt
+      \item MSc students' evaluator for \textit{DD2380 - Artificial Intelligence} under Prof. Patric Jensfelt
     \end{itemize}
-  \end{minipage}
+  \end{minipage} \\[-1em]
 
 %----------------------------------------------------------------------------------------
 %	VOLUNTARY EXPERIENCE
 %----------------------------------------------------------------------------------------
-\section{Voluntary Experience}
+\section{\textbf{Voluntary Experience}}
 
-\textbf{Computer Vision Engineer} $\cdot$ \href{https://issel.ee.auth.gr/pandora-robotics/}{PANDORA Robotics}, Thessaloniki GR \hfill Oct $2013$ -- Jul $2014$
+\noindent \textbf{Computer Vision Engineer} $\cdot$ \href{https://issel.ee.auth.gr/pandora-robotics/}{PANDORA Robotics}, Thessaloniki GR \hfill {\small Oct $2013$ -- Jul $2014$}
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
-      \item Implemented and deployed detection of holes on walls through Microsoft's Kinect RGBD camera in \texttt{C++} in the context of the international competition RoboCup Rescue
+      \item Enhanced robot perception by developing a \texttt{C++} wall-hole detection system using Microsoft Kinect RGB-D camera for the international RoboCup Rescue competition
     \end{itemize}
   \end{minipage}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\section{Education}
+\section{\textbf{Education}}
 
-\noindent \href{https://ikee.lib.auth.gr/record/354644}{\textbf{Doctorate}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki \hfill Sep $2018$--Jun $2023$ \\
-\href{http://kth.diva-portal.org/smash/record.jsf?pid=diva2\%3A1102597\&dswid=2875}{\textbf{Master of Science}} $\cdot$ Systems, Control, and Robotics $\cdot$ KTH Royal Institute of Technology \hfill Sep $2015$--Jun $2017$ \\
-\href{https://ikee.lib.auth.gr/record/291560}{\textbf{Diploma}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki \hfill Sep 2005--Jul $2013$
+{\hspace{-2em}
+\begin{tabular}{l@{\hspace{1em}}r}
+  \href{https://ikee.lib.auth.gr/record/354644}{\textbf{Doctorate}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki & {\small Sep $2018$ -- Jun $2023$} \\
+  \href{http://kth.diva-portal.org/smash/record.jsf?pid=diva2\%3A1102597\&dswid=2875}{\textbf{Master of Science}} $\cdot$ Systems, Control, and Robotics $\cdot$ KTH Royal Inst. of Technology & {\small Sep $2015$ -- Jun $2017$} \\
+  \href{https://ikee.lib.auth.gr/record/291560}{\textbf{Diploma}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki & {\small Sep $2005$ -- Jul $2013$}
+\end{tabular}}
 
 %----------------------------------------------------------------------------------------
 % SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{\textbf{Skills}}
 
 \begin{tabular}{rp{12cm}}
 Languages & \texttt{C/C++}, \texttt{Python}, \texttt{shell}, \texttt{MATLAB/Octave} \\
@@ -152,7 +147,7 @@ Control Techniques & MPC, PID, LQR
 %----------------------------------------------------------------------------------------
 %	LANGUAGES
 %----------------------------------------------------------------------------------------
-\section{Languages}
+\section{\textbf{Languages}}
 
 \begin{tabular}{rp{12cm}}
   English & Fluent --- IELTS Score $8.5$ \ \ (Greek Native)
@@ -163,12 +158,12 @@ Control Techniques & MPC, PID, LQR
 %----------------------------------------------------------------------------------------
 %	References
 %----------------------------------------------------------------------------------------
-\section{References}
+\section{\textbf{References}}
 \noindent Dr. Antonis Dimitriou $\cdot$ Coordinator of R\&D projects $\cdot$ (+30) 697 88 96 350 $\cdot$ \href{mailto:antodimi@auth.gr}{antodimi@auth.gr} \\
 
 \noindent For a complete list of references, whether they be supervisors or coworkers, visit
 \begin{center}\noindent
-\href{https://github.com/li9i/cv/tree/master/references}{\texttt{https://github.com/li9i/cv/tree/master/references}}
+\href{https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/li9i/cv/master/references/references_alexandros_filotheou.pdf}{\texttt{https://github.com/li9i/cv/tree/master/references}}
 \end{center}
 
 \end{document}
