@@ -8,8 +8,13 @@
 % To reduce the height of the top margin uncomment:
 %\addtolength{\voffset}{-1.75cm}
 
+
+% A line
+% \begin{center}\noindent\rule{0.382\textwidth}{0.4pt}\end{center}
+
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\definecolor{datecolour}{rgb}{0.5,0.5,0.5} % Colour of dates
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec}
@@ -28,7 +33,7 @@
 
 % If small portions of text are spilling onto the second page, consider a manual adjustment:
 \enlargethispage{2\baselineskip} % Adds two lines of vertical space
-\newcommand{\verticalspacebetweensections}{\vspace{0.4em}}
+\newcommand{\verticalspacebetweensections}{\vspace{0em}}
 \newcommand{\verticalspacebetweensectionandcontent}{\vspace{0.4em}}
 \newcommand{\verticalspaceafteritem}{\vspace{-0.8em}}
 
@@ -36,60 +41,51 @@
 \usepackage{fontawesome}
 \usepackage{tikz}
 
+% Measure the width of the "[" character
+\usepackage{calc}
+
 \begin{document}
 
 \pagenumbering{gobble}
 
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 %	NAME AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 \par{\centering{\Huge Alexandros Filotheou}\bigskip\par}
 
 \begin{center}
   {\footnotesize Thessaloniki, Greece $|$ \href{mailto:alexandros.filotheou@gmail.com}{alexandros.filotheou@gmail.com} $|$ (+30) 693 8787 677 $|$ \href{https://www.linkedin.com/in/alexandros-filotheou-5b6a8676/}{linkedin.com/in/alexandros-filotheou} \\ \href{https://github.com/li9i/}{\texttt{github.com/li9i}} $|$  \href{https://scholar.google.com/citations?hl=en&user=9_hI4hMAAAAJ&view_op=list_works}{scholar.google.com/alexandros-filotheou} \\ \href{https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/li9i/portfolio/master/portfolio.pdf}{Portfolio} \\}\vspace{1em}
 \end{center}
 
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 %	SUMMARY
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 \vspace{-3em}
 \begin{bw_box} \small
-  Robotics engineer with 9+ years of experience in system integration, state estimation, SLAM, \href{https://github.com/li9i/fsm-lo}{localisation}, \href{https://link.springer.com/article/10.1007/s10846-019-01086-y}{autonomous navigation}, \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{control}, perception, and \href{https://github.com/li9i/pandora\_vision\_2014}{computer vision}. Skilled in deploying solutions from simulation to real-world robots across \href{https://www.robetarme-project.eu/}{EU-funded R\&D projects} and \href{https://issel.ee.auth.gr/pandora-robotics/}{volunteer initiatives}. Proficient in ROS/ROS 2, git, Docker, and MATLAB/Octave, in Linux, with strong coding expertise in \href{https://github.com/li9i/fsm}{C++} and \href{https://github.com/cultureid-auth-ros-packages/cultureid-waypoints-following}{Python}. Recognised for bridging research and practical deployment to deliver reliable autonomous systems.
+  Robotics engineer with 9+ years of experience in system integration, state estimation, SLAM, \href{https://github.com/li9i/fsm-lo}{localisation}, \href{https://link.springer.com/article/10.1007/s10846-019-01086-y}{autonomous navigation}, \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{control}, perception, and \href{https://github.com/li9i/pandora\_vision\_2014}{computer vision}. Skilled in deploying solutions from simulation to real-world robots across \href{https://www.robetarme-project.eu/}{EU-funded R\&D projects} and \href{https://issel.ee.auth.gr/pandora-robotics/}{volunteer initiatives}. Proficient in ROS/ROS 2, git, Docker, and MATLAB/Octave on Linux, with strong coding expertise in \href{https://github.com/li9i/fsm}{C++} and \href{https://github.com/cultureid-auth-ros-packages/cultureid-waypoints-following}{Python}. Recognised for bridging research and practical deployment to deliver reliable autonomous systems.
 \end{bw_box}
 
-%----------------------------------------------------------------------------------------
-%	LINKS
-%----------------------------------------------------------------------------------------
-\vspace{0em}
+% ==============================================================================
+% SKILLS
+% ==============================================================================
+\section{\textbf{Skills}}\verticalspacebetweensectionandcontent
+
+\begin{center}
 \begin{tabular}{rl}
-
-  Demos/Videos &
-  \href{https://www.youtube.com/watch?v=xaDKjI0WkDc}{\texttt{cbgl}} $\cdot$
-  \href{https://www.youtube.com/watch?v=hB4qsHCEXGI}{\texttt{fsm}} $\cdot$
-  \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{CultureId} $\cdot$
-  \href{https://relief.web.auth.gr/}{RELIEF} $\cdot$
-  \href{https://www.youtube.com/watch?v=937OZez1iN8}{\texttt{multi-mpc}} \\
-
-  Example software packages &
-  \href{https://github.com/li9i/ros2-utils}{\texttt{ros2-utils}} $\cdot$
-  \href{https://github.com/li9i/cbgl}{\texttt{cbgl}} $\cdot$
-  \href{https://github.com/li9i/fsm-lo}{\texttt{fsm-lo}} $\cdot$
-  \href{https://github.com/li9i/lama-odom}{\texttt{lama-odom}} $\cdot$
-  \href{https://github.com/li9i/pandora\_vision\_2014/tree/hydro-devel/pandora\_vision\_hole\_detector}{\texttt{pandora-hole-detection}} \\
-
-  Example publications &
-  \href{https://ieeexplore.ieee.org/abstract/document/10802235}{[Global Localisation]} $\cdot$
-  \href{https://ieeexplore.ieee.org/abstract/document/9981228}{[LiDAR Odometry]} $\cdot$
-  \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[Multi-agent navigation]}
+Languages & \texttt{C/C++}, \texttt{Python}, \texttt{shell}, \texttt{MATLAB/Octave} \\
+Robotics/OS & \texttt{Linux},  \texttt{ROS}/\texttt{ROS 2} \\
+Tools/Frameworks & \texttt{git}, \texttt{Docker}, Eigen, Behavior Trees, Gazebo, \texttt{CI}/\texttt{CD}, \texttt{Qt}/\texttt{Tkinter}, \texttt{OpenCV} \\
+Control Techniques & MPC, PID, LQR
 \end{tabular}
+\end{center}
 \verticalspacebetweensections
 
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 %	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 \section{\textbf{Experience}}\verticalspacebetweensectionandcontent
 
-  \noindent\textbf{Robotics Engineer} $\cdot$ ITI-CERTH, Thessaloniki GR \hfill {\small Sep $2023$ -- Present} \\
+  \noindent\textbf{Robotics Engineer} $\cdot$ ITI-CERTH, Thessaloniki GR \hfill {\small \textcolor{datecolour}{Sep $2023$ -- Present}} \\
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
       \item Owner of software integration and sole git repository maintainer in EU-funded R\&D project \href{https://www.robetarme-project.eu/}{RoBétArmé}\verticalspaceafteritem
@@ -97,22 +93,21 @@
       \item Achieved robust ROS-ROS 2 interoperability and communication across multiple machines\verticalspaceafteritem
       \item Ensured code quality, continuous integration/deployment, and coordinated collaboration
     \end{itemize}
-  \end{minipage} \\[0.4em]
+  \end{minipage} \\[0.2em]
 
-  \noindent\textbf{Robotics \& Control Engineer} $\cdot$ ECE dept., Aristotle University of Thessaloniki GR \hfill {\small Sep $2018$ -- Mar $2023$} \\
+  \noindent\textbf{Robotics \& Control Engineer} $\cdot$ ECE dept., Aristotle University of Thessaloniki GR \hfill {\small \textcolor{datecolour}{Sep $2018$ -- Mar $2023$}} \\
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
       \item Technical robotics lead in large-scale R\&D projects \href{https://relief.web.auth.gr/language/en/home/}{RELIEF} and \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{CultureId} \verticalspaceafteritem
       \item Owner of system design, SW implementation, deployment of autonomous ground and aerial platforms \verticalspaceafteritem
-      \item Delivered production-grade 2D/3D SLAM and navigation pipelines with intuitive user GUIs \verticalspaceafteritem
+      \item Delivered production-grade 2D/3D SLAM and navigation pipelines with intuitive user GUIs in warehouses\verticalspaceafteritem
       \item Improved RFID-tag localisation accuracy $2$x through robustifying LiDAR-based filtering \verticalspaceafteritem
       \item Deployed human--mobile-robot applications at the \href{https://www.amth.gr/en}{AMTh} museum, engaging $3,000$+ visitors since $2023$ \verticalspaceafteritem
-      \item Built and integrated codebases that powered 18+ publications, enabling multi-team experiments and advancing real-world applications through novel robotics research
-      %\item Drove technical backbone behind 18+ high-impact research publications, delivering production-quality code, integrating multi-team systems and deploying experiments $\Rightarrow$ results which advanced robotics research and real-world applications
+      \item Developed and integrated codebases for 18+ publications, enabling multi-team experiments and translating novel robotics and RFID research into real-world applications
     \end{itemize}
-  \end{minipage} \\[0.4em]
+  \end{minipage} \\[0.2em]
 
-  \noindent\textbf{Teaching Assistant} $\cdot$ KTH Royal Institute of Technology, Stockholm SE \hfill {\small Sep $2016$ -- Nov $2016$} \\
+  \noindent\textbf{Teaching Assistant} $\cdot$ KTH Royal Institute of Technology, Stockholm SE \hfill {\small \textcolor{datecolour}{Sep $2016$ -- Nov $2016$}} \\
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
       \item \textit{DD2380 - Artificial Intelligence} under \href{https://www.kth.se/profile/patric}{Prof. Patric Jensfelt}
@@ -120,25 +115,52 @@
   \end{minipage} \\[-1em]
 \verticalspacebetweensections
 
-%----------------------------------------------------------------------------------------
-% SKILLS
-%----------------------------------------------------------------------------------------
-\section{\textbf{Skills}}\verticalspacebetweensectionandcontent
+% ==============================================================================
+%	LINKS
+% ==============================================================================
+\section{\textbf{Links}}\verticalspacebetweensectionandcontent\hspace{-2.3em}
+\begin{tabular}{rl}
 
-\begin{tabular}{rp{12cm}}
-Languages & \texttt{C/C++}, \texttt{Python}, \texttt{shell}, \texttt{MATLAB/Octave} \\
-$\{$Meta-$\}$Operating Systems & \texttt{Linux}, \texttt{ROS 2}, \texttt{ROS} \\
-  Tools & \texttt{git}, \texttt{Docker}, Eigen, Behavior Trees, Gazebo, \texttt{CI}/\texttt{CD}, \texttt{Qt} / \texttt{Tkinter}, \texttt{OpenCV} \\
-Control Techniques & MPC, PID, LQR
+  Software packages &
+  \href{https://github.com/li9i/ros2-utils}{\texttt{ros2-utils}} $\cdot$
+  \href{https://github.com/li9i/cbgl}{\texttt{cbgl}} $\cdot$
+  \href{https://github.com/fourier-scan-matcher/fsm}{\texttt{fsm-lo}} $\cdot$
+  \href{https://github.com/li9i/lama-odom}{\texttt{lama-odom}} $\cdot$
+  \href{https://github.com/li9i/pandora\_vision\_2014/tree/hydro-devel/pandora\_vision\_hole\_detector}{\texttt{pandora-hole-detection}} \\
+
+  Demos/Videos &
+  \href{https://www.youtube.com/watch?v=xaDKjI0WkDc}{\hphantom{[}Global Localisation\hphantom{]}} $\cdot$
+  \href{https://www.youtube.com/watch?v=hB4qsHCEXGI}{\hphantom{[}LiDAR Odometry\hphantom{]}} $\cdot$
+  \href{https://www.youtube.com/watch?v=937OZez1iN8}{\hphantom{[}Multi-agent navigation\hphantom{]}}$\cdot$
+  \href{https://relief.web.auth.gr/#pg-72-1}{RELIEF} $\cdot$
+  \href{https://cultureid.web.auth.gr/?page_id=200&lang=en#pl-200}{CultureId}
+  \\
+  Publications &
+  \href{https://ieeexplore.ieee.org/abstract/document/10802235}{[Global Localisation]} $\cdot$
+  \href{https://ieeexplore.ieee.org/abstract/document/9981228}{[LiDAR Odometry]} $\cdot$
+  \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[Multi-agent navigation]}
 \end{tabular}
 \verticalspacebetweensections
 
-%----------------------------------------------------------------------------------------
+% ==============================================================================
+%	EDUCATION
+% ==============================================================================
+\section{\textbf{Education}}\verticalspacebetweensectionandcontent
+
+{\hspace{-2em}
+\begin{tabular}{l@{\hspace{1em}}r}
+  \href{https://ikee.lib.auth.gr/record/354644}{\textbf{Doctorate}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki & {\small \textcolor{datecolour}{Sep $2018$ -- Jun $2023$}} \\
+  \href{http://kth.diva-portal.org/smash/record.jsf?pid=diva2\%3A1102597\&dswid=2875}{\textbf{Master of Science}} $\cdot$ Systems, Control, and Robotics $\cdot$ KTH Royal Inst. of Technology & {\small \textcolor{datecolour}{Sep $2015$ -- Jun $2017$}} \\
+  \href{https://ikee.lib.auth.gr/record/291560}{\textbf{Diploma}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki & {\small \textcolor{datecolour}{Sep $2005$ -- Jul $2013$}}
+\end{tabular}}
+\verticalspacebetweensections
+
+% ==============================================================================
 %	VOLUNTARY EXPERIENCE
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 \section{\textbf{Volunteering}}\verticalspacebetweensectionandcontent
 
-\noindent \textbf{Computer Vision Engineer} $\cdot$ \href{https://issel.ee.auth.gr/pandora-robotics/}{PANDORA Robotics}, Thessaloniki GR \hfill {\small Oct $2013$ -- Jul $2014$}
+\noindent \textbf{Computer Vision Engineer} $\cdot$ \href{https://issel.ee.auth.gr/pandora-robotics/}{PANDORA Robotics}, Thessaloniki GR \hfill {\small \textcolor{datecolour}{Oct $2013$ -- Jul $2014$}}
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
       \item Enhanced robot perception by developing a \href{https://github.com/li9i/pandora\_vision\_2014}{C++ wall-hole detection system} using Microsoft Kinect RGB-D for the international RoboCup Rescue competition, gaining $2^{\textnormal{nd}}$ place in $2015$
@@ -146,29 +168,16 @@ Control Techniques & MPC, PID, LQR
   \end{minipage}
 \verticalspacebetweensections
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{\textbf{Education}}\verticalspacebetweensectionandcontent
-
-{\hspace{-2em}
-\begin{tabular}{l@{\hspace{1em}}r}
-  \href{https://ikee.lib.auth.gr/record/354644}{\textbf{Doctorate}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki & {\small Sep $2018$ -- Jun $2023$} \\
-  \href{http://kth.diva-portal.org/smash/record.jsf?pid=diva2\%3A1102597\&dswid=2875}{\textbf{Master of Science}} $\cdot$ Systems, Control, and Robotics $\cdot$ KTH Royal Inst. of Technology & {\small Sep $2015$ -- Jun $2017$} \\
-  \href{https://ikee.lib.auth.gr/record/291560}{\textbf{Diploma}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki & {\small Sep $2005$ -- Jul $2013$}
-\end{tabular}}
-\verticalspacebetweensections
-
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 %	LANGUAGES
-%----------------------------------------------------------------------------------------
-\section{\textbf{Languages}}\verticalspacebetweensectionandcontent
-English: Fluent --- IELTS Score $8.5$ \ \ (Greek Native)
+% ==============================================================================
+\section{\textbf{English}}\verticalspacebetweensectionandcontent
+Fluent --- IELTS Score $8.5$ \ (Greek native and citizen)
 \verticalspacebetweensections
 
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 %	References
-%----------------------------------------------------------------------------------------
+% ==============================================================================
 \section{\textbf{References}}\verticalspacebetweensectionandcontent
 \begin{itemize}
   \item \href{https://gr.linkedin.com/in/antonis-dimitriou-21003452}{Antonis Dimitriou} $\cdot$ Coordinator of R\&D projects $\cdot$ (+30) 697 88 96 350 $\cdot$ \href{mailto:antodimi@auth.gr}{antodimi@auth.gr} \verticalspaceafteritem
