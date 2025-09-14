@@ -2,7 +2,7 @@
 \usepackage{alefilot}
 \usepackage{fontspec}
 \usepackage[utf8]{inputenc}
-\usepackage[top=10mm, bottom=1mm, inner=20mm, outer=20mm, footskip=20mm]{geometry}
+\usepackage[top=10mm, bottom=1mm, inner=0.75in, outer=0.75in, footskip=20mm]{geometry}
 \setmainfont{Latin Modern Roman} % Main document font
 
 % To reduce the height of the top margin uncomment:
@@ -14,7 +14,7 @@
 
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
-\definecolor{datecolour}{rgb}{0.5,0.5,0.5} % Colour of dates
+\definecolor{datecolour}{rgb}{0.4,0.4,0.4} % Colour of dates
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec}
@@ -62,7 +62,7 @@
 % ==============================================================================
 \vspace{-3em}
 \begin{bw_box} \small
-  Robotics engineer with 9+ years of experience in system integration, state estimation, SLAM, \href{https://github.com/li9i/fsm-lo}{localisation}, \href{https://link.springer.com/article/10.1007/s10846-019-01086-y}{autonomous navigation}, \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{control}, perception, and \href{https://github.com/li9i/pandora\_vision\_2014}{computer vision}. Skilled in deploying solutions from simulation to real-world robots across \href{https://www.robetarme-project.eu/}{EU-funded R\&D projects} and \href{https://issel.ee.auth.gr/pandora-robotics/}{volunteer initiatives}. Proficient in ROS/ROS 2, git, Docker, and MATLAB/Octave on Linux, with strong coding expertise in \href{https://github.com/li9i/fsm}{C++} and \href{https://github.com/cultureid-auth-ros-packages/cultureid-waypoints-following}{Python}. Recognised for bridging research and practical deployment to deliver reliable autonomous systems.
+  Robotics engineer with 9+ years of experience in system integration, state estimation, sensor fusion, SLAM, \href{https://github.com/li9i/fsm-lo}{localisation}, \href{https://link.springer.com/article/10.1007/s10846-019-01086-y}{autonomous navigation}, \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{control}, perception, and \href{https://github.com/li9i/pandora\_vision\_2014}{computer vision}. Skilled in deploying solutions from simulation to real-world robots across \href{https://www.robetarme-project.eu/}{EU-funded R\&D projects} and \href{https://issel.ee.auth.gr/pandora-robotics/}{volunteer initiatives}. Recognised for bridging research and practical deployment to deliver reliable autonomous systems.
 \end{bw_box}
 
 % ==============================================================================
@@ -72,6 +72,7 @@
 
 \begin{center}
 \begin{tabular}{rl}
+English & Native / Fluent (IELTS 8.5 - C2 Proficiency) \\
 Languages & \texttt{C/C++}, \texttt{Python}, \texttt{shell}, \texttt{MATLAB/Octave} \\
 Robotics/OS & \texttt{Linux},  \texttt{ROS}/\texttt{ROS 2} \\
 Tools/Frameworks & \texttt{git}, \texttt{Docker}, Eigen, Behavior Trees, Gazebo, \texttt{CI}/\texttt{CD}, \texttt{Qt}/\texttt{Tkinter}, \texttt{OpenCV} \\
@@ -88,10 +89,10 @@ Control Techniques & MPC, PID, LQR
   \noindent\textbf{Robotics Engineer} $\cdot$ ITI-CERTH, Thessaloniki GR \hfill {\small \textcolor{datecolour}{Sep $2023$ -- Present}} \\
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
-      \item Owner of software integration and sole git repository maintainer in EU-funded R\&D project \href{https://www.robetarme-project.eu/}{RoBétArmé}\verticalspaceafteritem
-      \item Designed organisation and deployed $50+$ Dockerised ROS/ROS 2 packages, use case orchestration via Behaviour Trees, and supporting software across multiple real and simulated mobile robotic platforms \verticalspaceafteritem
-      \item Achieved robust ROS-ROS 2 interoperability and communication across multiple machines\verticalspaceafteritem
-      \item Ensured code quality, continuous integration/deployment, and coordinated collaboration
+      \item Owner of software integration and git repository maintainer in EU-funded R\&D project \href{https://www.robetarme-project.eu/}{RoBétArmé}\verticalspaceafteritem
+      \item Ensured code quality via googletest and cpplint, continuous integration/deployment via CI/CD pipelines\verticalspaceafteritem
+      \item Designed organisation and deployed $50+$ Dockerised ROS/ROS 2 packages, use case orchestration via Behaviour Trees across multiple real and simulated mobile robotic platforms \verticalspaceafteritem
+      \item Achieved robust ROS-ROS 2 interoperability and communication across multiple machines using Zenoh
     \end{itemize}
   \end{minipage} \\[0.2em]
 
@@ -99,11 +100,11 @@ Control Techniques & MPC, PID, LQR
   \begin{minipage}[t]{\textwidth}
     \begin{itemize}
       \item Technical robotics lead in large-scale R\&D projects \href{https://relief.web.auth.gr/language/en/home/}{RELIEF} and \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{CultureId} \verticalspaceafteritem
-      \item Owner of system design, SW implementation, deployment of autonomous ground and aerial platforms \verticalspaceafteritem
-      \item Delivered production-grade 2D/3D SLAM and navigation pipelines with intuitive user GUIs in warehouses\verticalspaceafteritem
-      \item Improved RFID-tag localisation accuracy $2$x through robustifying LiDAR-based filtering \verticalspaceafteritem
-      \item Deployed human--mobile-robot applications at the \href{https://www.amth.gr/en}{AMTh} museum, engaging $3,000$+ visitors since $2023$ \verticalspaceafteritem
-      \item Developed and integrated codebases for 18+ publications, enabling multi-team experiments and translating novel robotics and RFID research into real-world applications
+      \item Owner of system design, implementation, deployment of autonomous ground and aerial platforms \verticalspaceafteritem
+      \item Boosted >$2$x RFID-tag localisation accuracy by robustifying LiDAR-based filtering via Fourier analysis\verticalspaceafteritem
+      \item Deployed human--mobile-robot applications at the \href{https://www.amth.gr/en}{AMTh} museum, engaging $2,000$+ visitors each year since $2023$, using Tkinter and Rasa \verticalspaceafteritem
+      \item Delivered production-grade 2D/3D SLAM and collision-avoiding navigation pipelines with intuitive user GUIs in warehouses, with karto, rtabmap, teb, and Qt\verticalspaceafteritem
+      \item Developed and integrated codebases for $18+$ publications in top-tier IEEE journals/conferences, enabling multi-team experiments, translating novel robotics and RFID research to real-world applications
     \end{itemize}
   \end{minipage} \\[0.2em]
 
@@ -116,11 +117,25 @@ Control Techniques & MPC, PID, LQR
 \verticalspacebetweensections
 
 % ==============================================================================
+%	VOLUNTARY EXPERIENCE
+% ==============================================================================
+\section{\textbf{Volunteering}}\verticalspacebetweensectionandcontent
+
+\noindent \textbf{Computer Vision Engineer} $\cdot$ \href{https://issel.ee.auth.gr/pandora-robotics/}{PANDORA Robotics}, Thessaloniki GR \hfill {\small \textcolor{datecolour}{Oct $2013$ -- Jul $2014$}}
+  \begin{minipage}[t]{\textwidth}
+    \begin{itemize}
+      \item Enhanced robot perception by developing a \href{https://github.com/li9i/pandora\_vision\_2014}{C++ wall-hole detection system} using Microsoft Kinect RGB-D for the international RoboCup Rescue competition, gaining $2^{\textnormal{nd}}$ place in $2015$
+    \end{itemize}
+  \end{minipage}
+\verticalspacebetweensections
+
+% ==============================================================================
 %	LINKS
 % ==============================================================================
-\section{\textbf{Links}}\verticalspacebetweensectionandcontent\hspace{-2.3em}
-\begin{tabular}{rl}
+\section{\textbf{Links}}\verticalspacebetweensectionandcontent
 
+\begin{center}
+\begin{tabular}{rl}
   Software packages &
   \href{https://github.com/li9i/ros2-utils}{\texttt{ros2-utils}} $\cdot$
   \href{https://github.com/li9i/cbgl}{\texttt{cbgl}} $\cdot$
@@ -140,6 +155,7 @@ Control Techniques & MPC, PID, LQR
   \href{https://ieeexplore.ieee.org/abstract/document/9981228}{[LiDAR Odometry]} $\cdot$
   \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[Multi-agent navigation]}
 \end{tabular}
+\end{center}
 \verticalspacebetweensections
 
 % ==============================================================================
@@ -147,33 +163,23 @@ Control Techniques & MPC, PID, LQR
 % ==============================================================================
 \section{\textbf{Education}}\verticalspacebetweensectionandcontent
 
-{\hspace{-2em}
-\begin{tabular}{l@{\hspace{1em}}r}
+\begin{center}
+{
+\begin{tabular}{ll}
   \href{https://ikee.lib.auth.gr/record/354644}{\textbf{Doctorate}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki & {\small \textcolor{datecolour}{Sep $2018$ -- Jun $2023$}} \\
   \href{http://kth.diva-portal.org/smash/record.jsf?pid=diva2\%3A1102597\&dswid=2875}{\textbf{Master of Science}} $\cdot$ Systems, Control, and Robotics $\cdot$ KTH Royal Inst. of Technology & {\small \textcolor{datecolour}{Sep $2015$ -- Jun $2017$}} \\
   \href{https://ikee.lib.auth.gr/record/291560}{\textbf{Diploma}} $\cdot$ Electrical \& Computer Engineering $\cdot$ Aristotle University of Thessaloniki & {\small \textcolor{datecolour}{Sep $2005$ -- Jul $2013$}}
-\end{tabular}}
-\verticalspacebetweensections
-
-% ==============================================================================
-%	VOLUNTARY EXPERIENCE
-% ==============================================================================
-\section{\textbf{Volunteering}}\verticalspacebetweensectionandcontent
-
-\noindent \textbf{Computer Vision Engineer} $\cdot$ \href{https://issel.ee.auth.gr/pandora-robotics/}{PANDORA Robotics}, Thessaloniki GR \hfill {\small \textcolor{datecolour}{Oct $2013$ -- Jul $2014$}}
-  \begin{minipage}[t]{\textwidth}
-    \begin{itemize}
-      \item Enhanced robot perception by developing a \href{https://github.com/li9i/pandora\_vision\_2014}{C++ wall-hole detection system} using Microsoft Kinect RGB-D for the international RoboCup Rescue competition, gaining $2^{\textnormal{nd}}$ place in $2015$
-    \end{itemize}
-  \end{minipage}
+\end{tabular}
+}
+\end{center}
 \verticalspacebetweensections
 
 % ==============================================================================
 %	LANGUAGES
 % ==============================================================================
-\section{\textbf{English}}\verticalspacebetweensectionandcontent
-Fluent --- IELTS Score $8.5$ \ (Greek native and citizen)
-\verticalspacebetweensections
+%\section{\textbf{English}}\verticalspacebetweensectionandcontent
+%Native / Fluent (IELTS 8.5 - C2 Proficiency)
+%\verticalspacebetweensections
 
 % ==============================================================================
 %	References
