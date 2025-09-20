@@ -1,0 +1,78 @@
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.5in, bottom=1mm, inner=0.75in, outer=0.75in, footskip=20mm]{geometry}
+\setmainfont{Latin Modern Roman} % Main document font
+\usepackage{xcolor}
+% ------------------------------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+% ------------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+% ------------------------------------------------------------------------------
+\definecolor{agray}{rgb}{0.3,0.3,0.3} % Colour of dates
+% ------------------------------------------------------------------------------
+% FOOTER
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\setlength{\textheight}{710pt}
+\setlength{\footskip}{84pt} % Distance from bottom of text to footer; increase to place lower
+\pagestyle{fancy}
+\fancyhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LO,RE]{\hfill \small source: \href{https://github.com/li9i/cv}{\texttt{github.com/li9i/cv}} --- Sep 2025}
+% ------------------------------------------------------------------------------
+% SPACING
+% If small portions of text are spilling onto the second page, consider a manual adjustment:
+\enlargethispage{2\baselineskip} % Adds two lines of vertical space
+\newcommand{\verticalspacebetweensections}{\vspace{-0.2em}}
+\newcommand{\verticalspacebetweensectionandcontent}{\vspace{0.2em}}
+\newcommand{\verticalspaceafteritem}{\vspace{-0.3em}}
+
+% A line
+% \begin{center}\noindent\rule{0.382\textwidth}{0.4pt}\end{center}
+
+% To reduce the height of the top margin uncomment:
+%\addtolength{\voffset}{-1.75cm}
+% ------------------------------------------------------------------------------
+% BOXES
+\usepackage[many]{tcolorbox}
+\NewEnviron{gg_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=black!5, colframe=white!80!, breakable]
+  %\begin{tcolorbox}[colback=white!10, colframe=black!30!, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\definecolor{sticky_note_yellow}{cmyk}{0.0, 0.0, 0.06, 0.0, 1.00}
+\NewEnviron{sticky_note_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback = sticky_note_yellow, colframe=sticky_note_yellow, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{bw_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=white!10, colframe=black!80!, arc=0pt,outer arc=0pt, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{gw_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=white!10, colframe=black!10!, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{bg_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=black!10, colframe=black!80!, arc=0pt,outer arc=0pt, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+% ------------------------------------------------------------------------------
