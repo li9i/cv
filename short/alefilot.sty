@@ -22,7 +22,7 @@
 \pagestyle{fancy}
 \fancyhead[]{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[LO,RE]{\hfill \small source: \href{https://github.com/li9i/cv}{\texttt{github.com/li9i/cv}} --- Sep 2025}
+\fancyfoot[LO,RE]{\hfill \small source: \href{https://github.com/li9i/cv}{\texttt{github.com/li9i/cv}} --- Nov 2025}
 % ------------------------------------------------------------------------------
 % SPACING
 % If small portions of text are spilling onto the second page, consider a manual adjustment:
@@ -48,6 +48,29 @@
   \begin{tcolorbox}[colback=black!5, colframe=white!80!, breakable, #1]
     \BODY
   \end{tcolorbox}%
+}
+
+% Define a tight box style as the above but inline
+\newtcbox{\ggcell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=black!5, colframe=white!80!, breakable, #1
+}
+
+\definecolor{codecolor}{RGB}{255, 185, 83}
+\newtcbox{\codecell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=codecolor, colframe=white!80!, breakable, #1
+}
+\definecolor{videocolor}{HTML}{4ebe9e}
+\newtcbox{\videocell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=videocolor, colframe=white!80!, breakable, #1
 }
 
 \definecolor{sticky_note_yellow}{cmyk}{0.0, 0.0, 0.06, 0.0, 1.00}
