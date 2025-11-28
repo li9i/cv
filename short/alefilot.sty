@@ -38,13 +38,16 @@
 %\addtolength{\voffset}{-1.75cm}
 % ------------------------------------------------------------------------------
 % BOXES
-\usepackage[many]{tcolorbox}
-\NewEnviron{gg_box}{%
-  \vspace{0.5cm}
-  \begin{tcolorbox}[colback=black!5, colframe=white!80!, breakable]
-  %\begin{tcolorbox}[colback=white!10, colframe=black!30!, breakable]
+\usepackage[most]{tcolorbox}
+\usepackage{environ}
+
+
+% use with
+% \begin{gg_box}[width=7cm, height=3cm, valign=center]
+\NewEnviron{gg_box}[1][]{%
+  \begin{tcolorbox}[colback=black!5, colframe=white!80!, breakable, #1]
     \BODY
-  \end{tcolorbox}
+  \end{tcolorbox}%
 }
 
 \definecolor{sticky_note_yellow}{cmyk}{0.0, 0.0, 0.06, 0.0, 1.00}
