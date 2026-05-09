@@ -105,3 +105,56 @@
   \end{tcolorbox}
 }
 % ------------------------------------------------------------------------------
+% Box where text is link
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% Usage: \linkboxsimple{fill}{frame}{corners}{hpad}{vpad}{text color}{url}{label}
+%  e.g.: \linkboxsimple{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{https://example.com}{Link text}
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxsimple}[8]{%
+  \tikz[baseline=(X.base)]
+    \node[fill=#1, draw=#2, rounded corners=#3,
+          inner xsep=#4, inner ysep=#5](X){\href{#7}{\color{#6}#8}};%
+}
+% ------------------------------------------------------------------------------
+% Entire box is link
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% Usage: \linkboxwhole{fill}{frame}{corners}{hpad}{vpad}{text color}{url}{label}
+%  e.g.: \linkboxwhole{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{https://example.com}{Link text}
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxwhole}[8]{%
+  \href{#7}{%
+    \tikz[baseline=(X.base)]
+      \node[fill=#1, draw=#2, rounded corners=#3,
+            inner xsep=#4, inner ysep=#5](X){\color{#6}#8};%
+  }%
+}
+% ------------------------------------------------------------------------------
+% Box where texts are links
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% \linkboxmany{fill}{frame}{corners}{hpad}{vpad}{text color}{content}
+% content is free-form: put as many \href links as you like
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxmany}[7]{%
+  \tikz[baseline=(X.base)]
+    \node[fill=#1, draw=#2, rounded corners=#3,
+          inner xsep=#4, inner ysep=#5, text=#6](X){#7};%
+}
+%
+% Helper for individual links
+%
+\newcommand{\lbref}[2]{\href{#1}{#2}}
+% Horizontal:
+% \linkboxmany{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{%
+%   \lbref{https://one.com}{One} \quad
+%   \lbref{https://two.com}{Two} \quad
+%   \lbref{https://three.com}{Three}%
+% }
+% Vertical:
+% \linkboxmany{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{%
+%   \begin{tabular}{@{}c@{}}
+%     \lbref{https://one.com}{One} \\
+%     \lbref{https://two.com}{Two} \\
+%     \lbref{https://three.com}{Three}
+%   \end{tabular}%
+% }
+% ------------------------------------------------------------------------------
