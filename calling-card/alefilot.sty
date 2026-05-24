@@ -13,19 +13,41 @@
 %}
 % ------------------------------------------------------------------------------
 \usepackage{hyperref}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
-\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\usepackage[normalem]{ulem}
+\definecolor{linkcolour}{rgb}{0,0.2,0.8} % Colour used by the "coloured" link styles
+% ------------------------------------------------------------------------------
+% LINK STYLE -- switch by setting \linkconfig to 1, 2, or 3:
+%   1 = coloured (dark-blue linkcolour), NOT underlined        [original]
+%   2 = same colour as the surrounding text/box, underlined
+%   3 = coloured (dark-blue linkcolour) AND underlined         [original + underline]
+\newcommand{\linkconfig}{3}
+% ------------------------------------------------------------------------------
+% Colour: config 2 inherits the ambient colour (hidelinks); 1 and 3 recolour.
+\ifnum\linkconfig=2
+  \hypersetup{hidelinks,breaklinks}
+\else
+  \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\fi
+% Underline: configs 2 and 3 underline every link. Patch hyperref's low-level
+% link macro (display text in #1, already-normalised URL in #2) so that URLs
+% containing #, %, & etc. stay handled by hyperref itself.
+\ifnum\linkconfig=1\else
+  \AtBeginDocument{%
+    \let\oldhyperlinkurl\hyper@linkurl
+    \def\hyper@linkurl#1#2{\oldhyperlinkurl{\uline{#1}}{#2}}%
+  }
+\fi
 % ------------------------------------------------------------------------------
 \definecolor{agray}{rgb}{0.3,0.3,0.3} % Colour of dates
 % ------------------------------------------------------------------------------
 % FOOTER
 \usepackage{fancyhdr}
-\setlength{\headheight}{15.2pt}
+\setlength{\headheight}{1.2pt}
 % (landscape) textheight/footskip left to geometry above
 \pagestyle{fancy}
 \fancyhead[]{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[LO,RE]{\hfill \small source: \href{https://github.com/li9i/cv}{\texttt{github.com/li9i/cv}} --- May 2026}
+\fancyfoot[LO,RE]{High Definition CV at \href{https://github.com/li9i/cv}{\texttt{github.com/li9i/cv}} --- Updated: 05/2026}
 % ------------------------------------------------------------------------------
 % SPACING
 % If small portions of text are spilling onto the second page, consider a manual adjustment:
