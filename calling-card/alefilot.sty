@@ -1,0 +1,159 @@
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, landscape, top=0.45in, bottom=0.35in, left=0.6in, right=0.6in, footskip=18pt]{geometry}
+\setmainfont{Latin Modern Roman} % Main document font
+\usepackage{xcolor}
+\usepackage{array} % p{} column modifiers (>{\raggedright...}) in two-column layout
+% ------------------------------------------------------------------------------
+%\renewcommand{\section}[1]{%
+%  \vspace{0pt}%
+%  \par\noindent%
+%  {\Large\scshape #1\hspace{0.5em}\leavevmode\leaders\hrule height \dimexpr0.5ex+0.2pt\relax depth \dimexpr-0.5ex+0.2pt\relax\hfill\kern0pt}%
+%  \par\vspace{0pt}%
+%}
+% ------------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+% ------------------------------------------------------------------------------
+\definecolor{agray}{rgb}{0.3,0.3,0.3} % Colour of dates
+% ------------------------------------------------------------------------------
+% FOOTER
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+% (landscape) textheight/footskip left to geometry above
+\pagestyle{fancy}
+\fancyhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LO,RE]{\hfill \small source: \href{https://github.com/li9i/cv}{\texttt{github.com/li9i/cv}} --- May 2026}
+% ------------------------------------------------------------------------------
+% SPACING
+% If small portions of text are spilling onto the second page, consider a manual adjustment:
+\newcommand{\verticalspacebetweensections}{\vspace{0.5em}}
+\newcommand{\verticalspacebetweensectionandcontent}{\vspace{0.25em}}
+\newcommand{\verticalspaceafteritem}{\vspace{-0.8em}}
+
+% A line
+% \begin{center}\noindent\rule{0.382\textwidth}{0.4pt}\end{center}
+
+% To reduce the height of the top margin uncomment:
+%\addtolength{\voffset}{-1.75cm}
+% ------------------------------------------------------------------------------
+% BOXES
+\usepackage[most]{tcolorbox}
+\usepackage{environ}
+
+
+% use with
+% \begin{gg_box}[width=7cm, height=3cm, valign=center]
+\NewEnviron{gg_box}[1][]{%
+  \begin{tcolorbox}[colback=black!5, colframe=white!80!, breakable, #1]
+    \BODY
+  \end{tcolorbox}%
+}
+
+% Define a tight box style as the above but inline
+\newtcbox{\ggcell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=black!5, colframe=white!80!, breakable, #1
+}
+
+\definecolor{codecolor}{RGB}{255, 185, 83}
+\newtcbox{\codecell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=codecolor, colframe=white!80!, breakable, #1
+}
+\definecolor{videocolor}{HTML}{4ebe9e}
+\newtcbox{\videocell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=videocolor, colframe=white!80!, breakable, #1
+}
+
+\definecolor{sticky_note_yellow}{cmyk}{0.0, 0.0, 0.06, 0.0, 1.00}
+\NewEnviron{sticky_note_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback = sticky_note_yellow, colframe=sticky_note_yellow, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{bw_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=white!10, colframe=black!80!, arc=0pt,outer arc=0pt, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{gw_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=white!10, colframe=black!10!, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+
+\NewEnviron{bg_box}{%
+  \vspace{0.5cm}
+  \begin{tcolorbox}[colback=black!10, colframe=black!80!, arc=0pt,outer arc=0pt, breakable]
+    \BODY
+  \end{tcolorbox}
+}
+% ------------------------------------------------------------------------------
+% Box where text is link
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% Usage: \linkboxsimple{fill}{frame}{corners}{hpad}{vpad}{text color}{url}{label}
+%  e.g.: \linkboxsimple{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{https://example.com}{Link text}
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxsimple}[8]{%
+  \tikz[baseline=(X.base)]
+    \node[fill=#1, draw=#2, rounded corners=#3,
+          inner xsep=#4, inner ysep=#5](X){\href{#7}{\color{#6}#8}};%
+}
+% ------------------------------------------------------------------------------
+% Entire box is link
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% Usage: \linkboxwhole{fill}{frame}{corners}{hpad}{vpad}{text color}{url}{label}
+%  e.g.: \linkboxwhole{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{https://example.com}{Link text}
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxwhole}[8]{%
+  \href{#7}{%
+    \tikz[baseline=(X.base)]
+      \node[fill=#1, draw=#2, rounded corners=#3,
+            inner xsep=#4, inner ysep=#5](X){\color{#6}#8};%
+  }%
+}
+% ------------------------------------------------------------------------------
+% Box where texts are links
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% \linkboxmany{fill}{frame}{corners}{hpad}{vpad}{text color}{content}
+% content is free-form: put as many \href links as you like
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxmany}[7]{%
+  \tikz[baseline=(X.base)]
+    \node[fill=#1, draw=#2, rounded corners=#3,
+          inner xsep=#4, inner ysep=#5, text=#6](X){#7};%
+}
+%
+% Helper for individual links
+%
+\newcommand{\lbref}[2]{\href{#1}{#2}}
+% Horizontal:
+% \linkboxmany{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{%
+%   \lbref{https://one.com}{One} \quad
+%   \lbref{https://two.com}{Two} \quad
+%   \lbref{https://three.com}{Three}%
+% }
+% Vertical:
+% \linkboxmany{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{%
+%   \begin{tabular}{@{}c@{}}
+%     \lbref{https://one.com}{One} \\
+%     \lbref{https://two.com}{Two} \\
+%     \lbref{https://three.com}{Three}
+%   \end{tabular}%
+% }
+% ------------------------------------------------------------------------------
