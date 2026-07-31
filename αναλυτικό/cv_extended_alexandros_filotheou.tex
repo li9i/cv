@@ -33,6 +33,18 @@
 %\fancyfoot[LO,RE]{Βιογραφικό Σημείωμα $-$ Αλέξανδρος Φιλοθέου}
 \fancyfoot[LO,RE]{}
 
+\raggedbottom
+
+\usepackage{tocloft}
+\setcounter{tocdepth}{1}
+
+% Custom ToC appearance
+\setlength{\cftbeforesecskip}{4pt}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsecnumwidth}{3em}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
+
 \usepackage{wasysym}
 \usepackage{fontawesome}
 \usepackage{tikz}
@@ -300,22 +312,23 @@ e-mail                       & \href{mailto:alexandros.filotheou@gmail.com}{alex
 %----------------------------------------------------------------------------------------
 \vspace{-0.5cm}
 \begin{bw_box} \small
-  \hspace{1em} Έχω 7+ χρόνια πρακτικής εμπειρίας στη Ρομποτική,
-  συμπεριλαμβανομένων SLAM, \href{https://github.com/li9i/cbgl}{Εντοπισμό} \&
-  \href{https://github.com/li9i/fsm-lo}{Εκτίμηση Στάσης},
+  \hspace{1em} Έχω 8+ χρόνια πρακτικής εμπειρίας στη Ρομποτική,
+  συμπεριλαμβανομένων SLAM, \href{https://github.com/cbgl/cbgl}{Εντοπισμό} \&
+  \href{https://github.com/fourier-scan-matcher/fsm-lo}{Εκτίμηση Στάσης},
   \href{https://link.springer.com/article/10.1007/s10846-019-01086-y}{Αυτόνομη
   Πλοήγηση},
   \href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{Έλεγχο},
-  \href{https://github.com/li9i/pandora\_vision\_2014}{Υπολογιστική Όραση} και
+  \href{https://github.com/li9i/pandora\_vision\_2014}{Υπολογιστική Όραση},
+  σχεδιασμό εργασιών με δέντρα συμπεριφοράς και
   γενική ολοκλήρωση, επίλυση προβλημάτων και αντιμετώπιση βλαβών.  Αυτές τις
   δεξιότητες τις απέκτησα σε
   \href{https://relief.web.auth.gr/\%CF\%81\%CE\%BF\%CE\%BC\%CF\%80\%CE\%BF\%CF\%84\%CE\%B9\%CE\%BA\%CE\%AC-\%CE\%BF\%CF\%87\%CE\%AE\%CE\%BC\%CE\%B1\%CF\%84\%CE\%B1/}{πραγματικές
   συνθήκες με πραγματικά ρομπότ}, καθώς και μέσω περιβαλλόντων προσομοίωσης,
-  εργαζόμενος σε ερευνητικά έργα που χρηματοδοτήθηκαν από την Ευρωπαϊκή
+  εργαζόμενος στη βιομηχανία, σε ερευνητικά έργα που χρηματοδοτήθηκαν από την Ευρωπαϊκή
   Επιτροπή και το Ελληνικό κράτος, ή μέσω εθελοντισμού. Γνωρίζω ROS και ROS 2,
   αλλά και MATLAB/Octave, σε Linux, το οποίο είναι το κύριο λειτουργικό μου
   σύστημα από το 2008. Η κύρια γλώσσα προγραμματισμού μου είναι η
-  \href{https://github.com/li9i/fsm}{C++} και δευτερεύουσα η
+  \href{https://github.com/fourier-scan-matcher/fsm}{C++} και δευτερεύουσα η
   \href{https://github.com/cultureid-auth-ros-packages/cultureid-waypoints-following}{Python}.
 
   \hspace{1em} Είμαι κάτοχος
@@ -349,14 +362,15 @@ e-mail                       & \href{mailto:alexandros.filotheou@gmail.com}{alex
 %----------------------------------------------------------------------------------------
 \section*{Γρήγοροι Σύνδεσμοι}
 
-\begin{tabular}{rp{12cm}}
+\begin{tabular}{rp{9cm}}
 
 Συμπυκνωμένη έκδοση βιογραφικού & \href{https://docs.google.com/viewerng/viewer?url=https://raw.githubusercontent.com/li9i/CV/master/compact/cv_compact_alexandros_filotheou.pdf}{Στο \texttt{github}} \\
 Ενδεικτικά πακέτα λογισμικού: &
-\href{https://index.ros.org/p/hitch_estimation_apriltag_array/#humble}{\texttt{hitch\_estimation\_apriltag\_array}} $\cdot$
-\href{https://index.ros.org/p/pointcloud_to_ply/#humble}{\texttt{pointcloud\_to\_ply}} \\
-  & \href{https://github.com/li9i/cbgl}{\texttt{cbgl}} $\cdot$
-\href{https://github.com/li9i/fsm-lo}{\texttt{fsm-lo}} $\cdot$
+\href{https://index.ros.org/p/hitch_estimation_apriltag_array/#humble}{\texttt{hitch\_estimation\_apriltag\_array}} \\
+  & \href{https://index.ros.org/r/pointcloud_conversions/#lyrical}{\texttt{pointcloud\_conversions}} $\cdot$
+\href{https://github.com/li9i/gitrl-z}{\texttt{gitrl-z}} $\cdot$
+\href{https://github.com/cbgl/cbgl}{\texttt{cbgl}} $\cdot$
+\href{https://github.com/fourier-scan-matcher/fsm-lo}{\texttt{fsm-lo}} $\cdot$
 \href{https://github.com/li9i/lama-odom}{\texttt{lama-odom}} $\cdot$
 \href{https://github.com/li9i/pandora\_vision\_2014/tree/hydro-devel/pandora\_vision\_hole\_detector}{\texttt{pvhd}} ---  \href{https://github.com/li9i}{\texttt{github}} \\
 
@@ -364,20 +378,22 @@ e-mail                       & \href{mailto:alexandros.filotheou@gmail.com}{alex
 Demos / videos: &
     Integration \href{https://www.youtube.com/shorts/TSIXd5L-Hxk}{[1]} $\cdot$
     \href{https://www.youtube.com/watch?v=ViU-9DLi2-M}{[2]} $\cdot$
-    \href{https://www.youtube.com/watch?v=xuIbOL-MPRk\&t=10s}{[3]}\\
+    \href{https://www.youtube.com/watch?v=xuIbOL-MPRk\&t=10s}{[3]} \\
     &
     \href{https://youtu.be/bo4lMI640DY?t=10}{SLAM/Navigation}  $\cdot$
-    \href{https://cultureid.web.auth.gr/?page\_id=200\&lang=en}{Museum Robot}  $\cdot$
+    \href{https://cultureid.web.auth.gr/?page\_id=200\&lang=en}{Museum Robot} $\cdot$
     \href{https://www.youtube.com/watch?v=937OZez1iN8}{Control is Fun} \\
     &
 \href{https://www.youtube.com/watch?v=xaDKjI0WkDc}{\texttt{cbgl}} $\cdot$ \href{https://cultureid.web.auth.gr/?page\_id=200&lang=en}{\texttt{cultureid}} $\cdot$ \href{https://www.youtube.com/watch?v=hB4qsHCEXGI}{\texttt{fsm}} $\cdot$ \href{https://relief.web.auth.gr/}{\texttt{relief}} \\
 
 Ενδεικτικές δημοσιεύσεις: &
-\href{https://ieeexplore.ieee.org/abstract/document/9981228}{[1]}
-\href{https://www.sciencedirect.com/science/article/abs/pii/S0921889021002323}{[2]}
-\href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[3]} --- \href{https://scholar.google.com/citations?view\_op=list\_works\&hl=en\&user=9\_hI4hMAAAAJ}{google scholar}\\
+\href{https://ieeexplore.ieee.org/abstract/document/10802235}{[1]}
+\href{https://ieeexplore.ieee.org/abstract/document/9981228}{[2]}
+\href{https://www.sciencedirect.com/science/article/abs/pii/S0921889021002323}{[3]}
+\href{https://www.tandfonline.com/doi/full/10.1080/00207179.2018.1514129}{[4]} --- \href{https://scholar.google.com/citations?view\_op=list\_works\&hl=en\&user=9\_hI4hMAAAAJ}{google scholar}\\
 
-  Portfolio & \href{https://docs.google.com/viewer?url=https://raw.githubusercontent.com/li9i/portfolio/master/portfolio.pdf}{Στο \texttt{github}} \\
+  Portfolio & \href{https://docs.google.com/viewer?url=https://raw.githubusercontent.com/li9i/portfolio/master/portfolio.pdf}{Στο \texttt{github}} $\cdot$
+  Συστάσεις \href{https://docs.google.com/viewerng/viewer?url=https://raw.githubusercontent.com/li9i/cv/master/references/references_alexandros_filotheou.pdf}{Στο \texttt{github}} \\
 \end{tabular} \\
 \vfill
 \tableofcontents
@@ -386,16 +402,18 @@ Demos / videos: &
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
-\vspace*{\fill}
-
 \section{Εργασιακή Εμπειρία}
 
 \begin{tabular}{rp{12cm}}
 %------------------------------------------------
 02.2026 - \hfill Παρόν \hfill & \textbf{Senior Robotics Software Engineer} \\
                               &  Intermodalics BV, Leuven, Belgium \\
+                              &  Διασύνδεση διαχειριστή στόλου VDA5050 με συμπεριφορές αποστολών σε ROS 2,
+                                 εντός διεθνούς ομάδας που αναπτύσσει αυτόνομα περονοφόρα οχήματα μαζικής
+                                 παραγωγής για αποθήκες, για λογαριασμό της
+                                 \href{https://www.youtube.com/watch?v=LWqDSMOAeec&t=10s}{KION Group AG}. \\
 &\\
-09.2023 - \hfill 01.2026 \hfill & \textbf{Μεταδιδακτορικός Ερευνητής} \\
+09.2023 - \hfill 01.2026 \hfill & \textbf{Μηχανικός Ενσωμάτωσης και Εγκατάστασης Λογισμικού} \\
                               &  Κέντρο Έρευνας και Τεχνολογικής Ανάπτυξης (ΕΚΕΤΑ), Θεσσαλονίκη\\
 &\\
 09.2018 - 03.2023 & \textbf{Εργολήπτης Ερευνητικών Έργων Ρομποτικής} \\
@@ -425,34 +443,36 @@ Demos / videos: &
 07.2008 - 06.2009 & \textbf{Μηχανικός Τηλεπικοινωνιών} \\
                   & Οργανισμός Τηλεπικοινωνιών Ελλάδος, Θεσσαλονίκη\\
                   & Τεχνική υπηρεσία σε ζητήματα τοπικών δικτύων και δικτύων ευρείας περιοχής. \\
-\end{tabular} \\
-\vspace*{\fill}
+\end{tabular}
 \newpage
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 
-\vspace*{\fill}
 \section{Εργασία σε ερευνητικά έργα}
 
 \begin{tabular}{rp{11cm}}
-$2023.09 - 2026.01$ & \href{https://www.robetarme-project.eu/}{\textbf{RoBétArmé}} \\
+$2023.09 - 2026.01$ & \href{https://www.robetarme-project.eu/}{\textbf{RoBétArmé}} $\cdot$ \textit{Horizon Europe, GA No. 101058731} \\
                            & \textit{Κέντρο Έρευνας και Τεχνολογικής Ανάπτυξης (ΕΚΕΤΑ)}\\
 \\
-                           & Υπεύθυνος ενσωμάτωσης λογισμικού. Διαχειριστής των αποθετηρίων GitLab του έργου. Ανάπτυξη πακέτων ROS για τον σχεδιασμό, τον προγραμματισμό, την οργάνωση και την ενεργοποίηση πακέτων ROS Noetic και ROS 2 Humble και άλλου λογισμικού, καθώς και την ενσωμάτωσή τους σε δέντρα συμπεριφοράς. Ενσωμάτωση σε τρεις κινητές πλατφόρμες (δύο κινητές βάσεις ROBOTNIK και ένα ρυμουλκούμενο). Ενσωμάτωση εσωτερικών και εξωτερικών πακέτων ROS Noetic και ROS 2 Humble. Εργασία με 3D LIDAR, κάμερες RGBD, ρομπότ URDF. Μετάφραση προσαρμοσμένων διεπαφών μεταξύ ROS 1 και ROS 2. Διαμόρφωση δικτύου και αντιμετώπιση προβλημάτων για ROS 2 μέσω DDS, Zenoh. Εικονικοποίηση μέσω Docker και προδιαγραφή προτύπων για όλες τις εικόνες του έργου. Γενική αντιμετώπιση προβλημάτων λογισμικού και υλικού. Τεκμηρίωση. Συγγραφή παραδοτέων. \\
-&\\
+                           & Μοναδικός αρχιτέκτονας και ενσωματωτής λογισμικού του έργου, το οποίο εγκαταστάθηκε στο \href{https://www.gem.wiki/Hermillon_hydroelectric_plant}{υδροηλεκτρικό εργοστάσιο Hermillon της EDF} σε συνεργασία με την Bouygues Construction, έπειτα από δύο χρόνια συνεχούς ενσωμάτωσης μεταξύ των 12 εταίρων της κοινοπραξίας. Διαχειριστής των αποθετηρίων GitLab του έργου. Σχεδιασμός εργασιών και οργάνωση δέντρων συμπεριφοράς για ρομπότ προσθετικής κατασκευής σκυροδέματος και \href{https://www.youtube.com/watch?v=xuIbOL-MPRk}{μετάλλου}. Ανάπτυξη πακέτων ROS για τον σχεδιασμό, τον προγραμματισμό, την οργάνωση και την ενεργοποίηση πακέτων ROS Noetic και ROS 2 Humble και άλλου λογισμικού, καθώς και την ενσωμάτωσή τους σε δέντρα συμπεριφοράς. Καθορισμός των αρχών ανάπτυξης, ενσωμάτωσης και εγκατάστασης για τις 12 ομάδες λογισμικού του έργου και τα 50+ dockerised πακέτα ROS 2 του. Ενσωμάτωση σε τρεις κινητές πλατφόρμες (δύο κινητές βάσεις ROBOTNIK και ένα ρυμουλκούμενο). Ενσωμάτωση εσωτερικών και εξωτερικών πακέτων ROS Noetic και ROS 2 Humble. Εργασία με 3D LIDAR, κάμερες RGBD, ρομπότ URDF. Μετάφραση προσαρμοσμένων διεπαφών μεταξύ ROS 1 και ROS 2. Διαμόρφωση δικτύου και αντιμετώπιση προβλημάτων για ROS 2 μέσω DDS, Zenoh. Εικονικοποίηση μέσω Docker και προδιαγραφή προτύπων για όλες τις εικόνες του έργου. Εντοπισμός των σημείων συμφόρησης που μείωσαν τον χρόνο εγκατάστασης περισσότερο από 10x σε ολόκληρο τον στόλο των ρομπότ προσθετικής κατασκευής. Γενική αντιμετώπιση προβλημάτων λογισμικού και υλικού. Τεκμηρίωση. Συγγραφή παραδοτέων. \\
+\end{tabular}
+
+\vspace{1.5em}
+
+\begin{tabular}{rp{11cm}}
 $2020.04 - 2023.03$ & \href{https://cultureid.web.auth.gr/?page\_id=216\&lang=en}{\textbf{CULTUREID}} \\
                     & \textit{Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης}\\
                     & \textit{Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών} \\
 \\
-                    & Ανάπτυξη πακέτων ROS για χαρτογράφηση, εντοπισμό, πλοήγηση, οπτικοποίηση (Tkinter). Ενσωμάτωση σε μία κινητή πλατφόρμα (Turtlebot). Μοναδικός ενσωματωτής σχετικός με ρομπότ. Ενσωμάτωση λογισμικού σχετικού με RFID, κατασκευασμένου από το εργοστάσιο και κατά παραγγελία, και συσκευασία σε ROS. Γενική αντιμετώπιση προβλημάτων και ενσωμάτωση λογισμικού και υλικού. Εργασία με 2D LIDAR, κάμερες RGBD, αναγνώστες RFID. Τεκμηρίωση.Συγγραφή παραδοτέων. \\
+                    & Ανάπτυξη πακέτων ROS για χαρτογράφηση, εντοπισμό, πλοήγηση, οπτικοποίηση (Tkinter). Ενσωμάτωση σε μία κινητή πλατφόρμα (Turtlebot) ενός πλήρους \href{https://www.youtube.com/watch?v=2EvTGNOqTrs}{αυτόνομου κοινωνικού ρομπότ} (NLP, πλοήγηση, SLAM, RFID, διεπαφή χρήστη), το οποίο εξυπηρετεί 2.000+ επισκέπτες ετησίως στο \href{https://www.amth.gr/}{Αρχαιολογικό Μουσείο Θεσσαλονίκης} από το 2023. Μοναδικός ενσωματωτής σχετικός με ρομπότ. Ενσωμάτωση λογισμικού σχετικού με RFID, κατασκευασμένου από το εργοστάσιο και κατά παραγγελία, και συσκευασία σε ROS. Γενική αντιμετώπιση προβλημάτων και ενσωμάτωση λογισμικού και υλικού. Εργασία με 2D LIDAR, κάμερες RGBD, αναγνώστες RFID. Τεκμηρίωση.Συγγραφή παραδοτέων. \\
 &\\
 $2018.09 - 2021.08$ & \href{https://relief.web.auth.gr/}{\textbf{RELIEF}} \\
                     & \textit{Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης}\\
                     & \textit{Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών} \\
 \\
-                    & Ανάπτυξη πακέτων ROS για χαρτογράφηση, εντοπισμό, πλοήγηση και οπτικοποίηση (Qt). Ενσωμάτωση σε δύο κινητές πλατφόρμες (Turtlebot \& Robotnik RB1). Μοναδικός ενσωματωτής σχετικός με ρομπότ. Ενσωμάτωση λογισμικού σχετικού με RFID, κατασκευασμένου από το εργοστάσιο και κατά παραγγελία, και συσκευασία σε ROS. Γενική αντιμετώπιση προβλημάτων και ενσωμάτωση λογισμικού και υλικού. Εργασία με 2D LIDAR, κάμερες RGBD, αναγνώστες RFID. Τεκμηρίωση. Συγγραφή παραδοτέων. \\
+                    & Ανάπτυξη πακέτων ROS για χαρτογράφηση, εντοπισμό, πλοήγηση και οπτικοποίηση (Qt). Ενσωμάτωση σε δύο επίγειες κινητές πλατφόρμες (Turtlebot 2 \& Robotnik RB1) και σε εναέριες πλατφόρμες για απογραφή RFID. Αύξηση της ακρίβειας εντοπισμού του στόλου κατά 50\%, έως ακρίβεια εκατοστού. Μοναδικός ενσωματωτής σχετικός με ρομπότ. Ενσωμάτωση λογισμικού σχετικού με RFID, κατασκευασμένου από το εργοστάσιο και κατά παραγγελία, και συσκευασία σε ROS. Γενική αντιμετώπιση προβλημάτων και ενσωμάτωση λογισμικού και υλικού. Εργασία με 2D LIDAR, κάμερες RGBD, αναγνώστες RFID. Τεκμηρίωση. Συγγραφή παραδοτέων. \\
 &\\
 \end{tabular}
 
@@ -468,6 +488,25 @@ $2018.09 - 2021.08$ & \href{https://relief.web.auth.gr/}{\textbf{RELIEF}} \\
                   & Σχεδίαση της αρχιτεκτονικής, υλοποίηση και ενδελεχής τεκμηρίωση
                     του συστήματος Εύρεσης Οπών του ρομποτικού πράκτορα PANDORA, χρησιμοποιώντας το ROS, αισθητήρες RBG+D
                     (Microsoft Kinect, ASUS Xtion), στα πλάισια και τις συνθήκες του διεθνούς διαγωνισμού RoboCup Rescue.\\
+\end{tabular} \\
+
+%----------------------------------------------------------------------------------------
+%	OPEN SOURCE CONTRIBUTIONS
+%----------------------------------------------------------------------------------------
+
+\section{Συνεισφορές σε Λογισμικό Ανοικτού Κώδικα}
+
+\begin{tabular}{rp{12cm}}
+Linux & \href{https://github.com/li9i/gitrl-z}{\texttt{gitrl-z}} \\
+      & Εργαλείο πλοήγησης στο reflog του git για την επαναφορά του δέντρου εργασίας μετά από λάθη. \\
+&\\
+%------------------------------------------------
+ROS 2 & \href{https://index.ros.org/p/hitch_estimation_apriltag_array/#humble}{\texttt{hitch\_estimation\_apriltag\_array}} \\
+      & Εκτίμηση της γωνίας μεταξύ οχήματος και ρυμουλκούμενου. \\
+&\\
+%------------------------------------------------
+ROS 2 & \href{https://index.ros.org/r/pointcloud_conversions/#lyrical}{\texttt{pointcloud\_conversions}} \\
+      & Μετατροπές μορφής και συναρτήσεις αποθήκευσης για νέφη σημείων. \\
 \end{tabular} \\
 \vspace*{\fill}
 \newpage
@@ -588,11 +627,13 @@ $2005$ & $21^{o\varsigma}$ εκ των $280$ μαθητών που πέρασα�
 \begin{tabular}{rp{9cm}}
   Γλώσσες & \texttt{C/C++}, \texttt{Python}, \texttt{shell}, \texttt{MATLAB/Octave}, $\{$\texttt{PL/}$\}$\texttt{SQL}, \texttt{Java}, \texttt{Assembly}\\
 &\\
-  $\{$Μετα-$\}$λειτουργικά Συστήματα& \texttt{Linux}, \texttt{ROS} \\
+  $\{$Μετα-$\}$λειτουργικά Συστήματα& \texttt{Linux}, \texttt{ROS}/\texttt{ROS 2} \\
 &\\
   Εφαρμογές Γραφικών & \texttt{AutoCAD}, \texttt{Gimp}\\
 &\\
-  Εργαλεία & \texttt{git}, \texttt{Docker}, \texttt{OpenCV}, \texttt{Qt (cpp)}, \texttt{Tkinter (py)}, Behavior Trees, \LaTeX, \texttt{Oracle Forms} / \texttt{Reports}, \texttt{Microsoft} $\{$\texttt{Visio}, \texttt{Project}, \texttt{Office}$\}$ \\
+  Εργαλεία & \texttt{git}, \texttt{Docker}, \texttt{OpenCV}, \texttt{Eigen}, Gazebo, \texttt{CI}/\texttt{CD}, \texttt{Qt (cpp)}, \texttt{Tkinter (py)}, Behavior Trees, \LaTeX, \texttt{Oracle Forms} / \texttt{Reports}, \texttt{Microsoft} $\{$\texttt{Visio}, \texttt{Project}, \texttt{Office}$\}$ \\
+&\\
+  Αισθητήρες / Υλικό & LiDAR Ouster 3D και Hokuyo 2D, SICK Visionary-T, Astra, Realsense, ZED2, Impinj R420 \\
 &\\
   Τεχνικές Ελέγχου & MPC, LQR, PID
 \end{tabular}\\
