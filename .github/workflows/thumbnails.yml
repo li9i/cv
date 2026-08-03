@@ -1,0 +1,44 @@
+name: thumbnails
+
+# Regenerates the README thumbnails whenever a PDF changes, and commits them
+# back to the branch that was pushed.
+
+on:
+  push:
+    paths:
+      - '**/*.pdf'
+  workflow_dispatch:
+
+concurrency:
+  group: thumbnails-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install poppler and imagemagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends poppler-utils imagemagick
+
+      - name: Rebuild thumbnails
+        run: |
+          chmod +x tools/mkthumb.sh
+          make thumbs
+
+      - name: Commit any changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/thumbnails
+          if git diff --cached --quiet; then
+            echo "Thumbnails already up to date."
+          else
+            git commit -m "Regenerate README thumbnails"
+            git push
+          fi
