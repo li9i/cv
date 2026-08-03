@@ -1,0 +1,16 @@
+# LaTeX build output
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# biblatex with the biber backend
+*.bbl
+*.bcf
+*.blg
+*.run.xml
