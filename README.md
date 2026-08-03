@@ -30,6 +30,7 @@ Table of Contents
     </td>
   </tr>
   <tr>
+    <td width="33%"></td>
     <td align="center" width="33%">
       <a href="https://docs.google.com/viewerng/viewer?url=https://raw.githubusercontent.com/li9i/CV/master/%CF%83%CF%8D%CE%BD%CF%84%CE%BF%CE%BC%CE%BF/cv_compact_alexandros_filotheou.pdf">
         <img src="assets/thumbnails/syntomo.png" width="241" alt="Compact CV in Greek, one page">
@@ -44,7 +45,6 @@ Table of Contents
       <b>Αναλυτικό</b><br>
       <sub>Ελληνικά &middot; 8 σελίδες</sub>
     </td>
-    <td width="33%"></td>
   </tr>
 </table>
 
