@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 # Renders page 1 of a PDF as a sheet with a drop shadow, for use as a README
-# thumbnail. Longer documents get more sheets stacked behind the first one, so
-# that a thicker stack reads as a longer document. The depth is a rough band,
-# not the exact page count.
+# thumbnail. A document of more than one page gets a second sheet stacked
+# behind the first, which reads as "there is more than one page here". The
+# stack does not track the exact page count.
 #
-#   1 page      a single sheet
-#   2 to 4      two sheets behind
-#   5 or more   four sheets behind
+#   1 page           a single sheet
+#   2 or more        one sheet behind
 #
 # The PDF is rasterised with pdftoppm rather than by ImageMagick, because most
 # distributions ship a policy file that stops ImageMagick reading PDFs at all.
@@ -25,9 +24,8 @@ tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
 
 pages=$(pdfinfo "$pdf" | awk '/^Pages:/ {print $2}')
-if   [ "$pages" -ge 5 ]; then back=4
-elif [ "$pages" -ge 2 ]; then back=2
-else                          back=0
+if [ "$pages" -ge 2 ]; then back=1
+else                        back=0
 fi
 
 pdftoppm -png -r 200 -f 1 -l $(( back + 1 )) "$pdf" "$tmp/p"

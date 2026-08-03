@@ -23,7 +23,7 @@ Table of Contents
     </td>
     <td align="center" width="33%">
       <a href="https://docs.google.com/viewerng/viewer?url=https://raw.githubusercontent.com/li9i/CV/master/extended/cv_extended_alexandros_filotheou.pdf">
-        <img src="assets/thumbnails/extended.png" width="273" alt="Extended CV, eight pages">
+        <img src="assets/thumbnails/extended.png" width="249" alt="Extended CV, eight pages">
       </a><br>
       <b>Extended</b><br>
       <sub>English &middot; 8 pages</sub>
@@ -40,7 +40,7 @@ Table of Contents
     </td>
     <td align="center" width="33%">
       <a href="https://docs.google.com/viewerng/viewer?url=https://raw.githubusercontent.com/li9i/CV/master/%CE%B1%CE%BD%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C/cv_extended_alexandros_filotheou.pdf">
-        <img src="assets/thumbnails/analytiko.png" width="273" alt="Extended CV in Greek, eight pages">
+        <img src="assets/thumbnails/analytiko.png" width="249" alt="Extended CV in Greek, eight pages">
       </a><br>
       <b>Αναλυτικό</b><br>
       <sub>Ελληνικά &middot; 8 σελίδες</sub>
