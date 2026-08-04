@@ -1,12 +1,83 @@
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.5in, bottom=1mm, inner=0.75in, outer=0.75in, footskip=20mm]{geometry}
+\setmainfont{GFS Didot} % Main document font
+\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase] % mono face that covers Greek
+\usepackage{polyglossia}
+\setdefaultlanguage{greek}
+\setotherlanguage{english}
+\usepackage{xcolor}
+% ------------------------------------------------------------------------------
+\renewcommand{\section}[1]{%
+  \vspace{0pt}%
+  \par\noindent%
+  {\Large #1\hspace{0.5em}\leavevmode\leaders\hrule height \dimexpr0.5ex+0.2pt\relax depth \dimexpr-0.5ex+0.2pt\relax\hfill\kern0pt}%
+  \par\vspace{0pt}%
+}
+% ------------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+% ------------------------------------------------------------------------------
+\definecolor{agray}{rgb}{0.3,0.3,0.3} % Colour of dates
+% ------------------------------------------------------------------------------
+% FOOTER
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\setlength{\textheight}{710pt}
+\setlength{\footskip}{84pt} % Distance from bottom of text to footer; increase to place lower
+\pagestyle{fancy}
+\fancyhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LO,RE]{\hfill \small \href{https://docs.google.com/viewerng/viewer?url=https://raw.githubusercontent.com/li9i/CV/master/\%CE\%B1\%CE\%BD\%CE\%B1\%CE\%BB\%CF\%85\%CF\%84\%CE\%B9\%CE\%BA\%CF\%8C/cv_extended_alexandros_filotheou.pdf}{Αναλυτική έκδοση} \hspace{0.5em} $\cdot$ \hspace{0.5em} \ πηγή: \href{https://github.com/li9i/cv}{\texttt{github.com/li9i/cv}} \hspace{0.5em} $\cdot$ \hspace{0.5em} \  Μάιος 2026}
+% ------------------------------------------------------------------------------
+% SPACING
+% If small portions of text are spilling onto the second page, consider a manual adjustment:
+\enlargethispage{2\baselineskip} % Adds two lines of vertical space
+\newcommand{\verticalspacebetweensections}{\vspace{1em}}
+\newcommand{\verticalspacebetweensectionandcontent}{\vspace{0.25em}}
+\newcommand{\verticalspaceafteritem}{\vspace{-0.8em}}
+
+% A line
+% \begin{center}\noindent\rule{0.382\textwidth}{0.4pt}\end{center}
+
+% To reduce the height of the top margin uncomment:
+%\addtolength{\voffset}{-1.75cm}
+% ------------------------------------------------------------------------------
 % BOXES
-\usepackage[many]{tcolorbox}
+\usepackage[most]{tcolorbox}
 \usepackage{environ}
-\NewEnviron{gg_box}{%
-  \vspace{0.5cm}
-  \begin{tcolorbox}[colback=black!5, colframe=white!80!, breakable]
-  %\begin{tcolorbox}[colback=white!10, colframe=black!30!, breakable]
+
+
+% use with
+% \begin{gg_box}[width=7cm, height=3cm, valign=center]
+\NewEnviron{gg_box}[1][]{%
+  \begin{tcolorbox}[colback=black!5, colframe=white!80!, breakable, #1]
     \BODY
-  \end{tcolorbox}
+  \end{tcolorbox}%
+}
+
+% Define a tight box style as the above but inline
+\newtcbox{\ggcell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=black!5, colframe=white!80!, breakable, #1
+}
+
+\definecolor{codecolor}{RGB}{255, 185, 83}
+\newtcbox{\codecell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=codecolor, colframe=white!80!, breakable, #1
+}
+\definecolor{videocolor}{HTML}{4ebe9e}
+\newtcbox{\videocell}[1][]{%
+  on line,
+  boxsep=0pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt,
+  colback=videocolor, colframe=white!80!, breakable, #1
 }
 
 \definecolor{sticky_note_yellow}{cmyk}{0.0, 0.0, 0.06, 0.0, 1.00}
@@ -37,3 +108,57 @@
     \BODY
   \end{tcolorbox}
 }
+% ------------------------------------------------------------------------------
+% Box where text is link
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% Usage: \linkboxsimple{fill}{frame}{corners}{hpad}{vpad}{text color}{url}{label}
+%  e.g.: \linkboxsimple{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{https://example.com}{Link text}
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxsimple}[8]{%
+  \tikz[baseline=(X.base)]
+    \node[fill=#1, draw=#2, rounded corners=#3,
+          inner xsep=#4, inner ysep=#5](X){\href{#7}{\color{#6}#8}};%
+}
+% ------------------------------------------------------------------------------
+% Entire box is link
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% Usage: \linkboxwhole{fill}{frame}{corners}{hpad}{vpad}{text color}{url}{label}
+%  e.g.: \linkboxwhole{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{https://example.com}{Link text}
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxwhole}[8]{%
+  \href{#7}{%
+    \tikz[baseline=(X.base)]
+      \node[fill=#1, draw=#2, rounded corners=#3,
+            inner xsep=#4, inner ysep=#5](X){\color{#6}#8};%
+  }%
+}
+% ------------------------------------------------------------------------------
+% Box where texts are links
+% Requires: \usepackage{tikz}, \usepackage{hyperref}
+% \linkboxmany{fill}{frame}{corners}{hpad}{vpad}{text color}{content}
+% content is free-form: put as many \href links as you like
+% ------------------------------------------------------------------------------
+\newcommand{\linkboxmany}[7]{%
+  \tikz[baseline=(X.base)]
+    \node[fill=#1, draw=#2, rounded corners=#3,
+          inner xsep=#4, inner ysep=#5, text=#6](X){#7};%
+}
+%
+% Helper for individual links
+%
+\newcommand{\lbref}[2]{\href{#1}{#2}}
+% Horizontal:
+% \linkboxmany{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{%
+%   \lbref{https://one.com}{One} \quad
+%   \lbref{https://two.com}{Two} \quad
+%   \lbref{https://three.com}{Three}%
+% }
+% Vertical:
+% \linkboxmany{blue!8}{blue!40}{3pt}{12pt}{8pt}{blue!70}{%
+%   \begin{tabular}{@{}c@{}}
+%     \lbref{https://one.com}{One} \\
+%     \lbref{https://two.com}{Two} \\
+%     \lbref{https://three.com}{Three}
+%   \end{tabular}%
+% }
+% ------------------------------------------------------------------------------
