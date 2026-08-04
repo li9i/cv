@@ -16,7 +16,7 @@ set -euo pipefail
 
 pdf=$1
 out=$2
-width=$(( ${3:-220} * 2 ))   # rendered at 2x, shown at 1x in the README
+width=$(( ${3:-190} * 2 ))   # rendered at 2x, shown at 1x in the README
 edge='#d8dee4'               # page border
 step=16                      # offset between stacked sheets, at 2x
 
