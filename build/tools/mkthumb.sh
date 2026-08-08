@@ -10,7 +10,7 @@
 # The PDF is rasterised with pdftoppm rather than by ImageMagick, because most
 # distributions ship a policy file that stops ImageMagick reading PDFs at all.
 #
-# usage: tools/mkthumb.sh <input.pdf> <output.png> [display-width]
+# usage: build/tools/mkthumb.sh <input.pdf> <output.png> [display-width]
 
 set -euo pipefail
 
